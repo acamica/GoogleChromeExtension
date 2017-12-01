@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>100 Million Books Options</title>
+    
+    <link rel="stylesheet" href="vendor/css/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/flat-ui.min.css">
+    <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="newTab.css">-->
+	<link rel="stylesheet" href="options.css">
+    
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+	<script src="vendor/js/flat-ui.min.js"></script>
+</head>
+
+<body>
+    <!--<div class="ext-setting">
+        <p>In the top-right corner, show:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="topright" value="topsites" checked>
+            <span>Chrome's Top Sites</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="topright" value="counter">
+            <span>Counter to 100,000,000</span>
+          </label>
+        </div>
+    </div>-->
+	
+	<div class="ext-setting no-gold">
+		<i class="fa fa-star gold-indicator" aria-hidden="true"></i>
+        <p>Get Pronto & keep 3-second updates for $19/year.</p><p>Learn more & get a registration key <a href="https://gum.co/xtYo" target="_blank">here</a>.</p><p>Lifetime memberships are available, but only in bitcoin. Price is 39 USD in BTC. <a href='https://bitpay.com/cart/add?itemId=GJCT5PARvRo9HNnHVwc1gN' target='_blank'>Get it on BitPay</a>, and I'll email you a registration key.</p><!--<p class='ua-special'><span class="note">User Appreciation Special, Until Friday Only: <br><a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VTX4L6TBHZDL8' target='_blank'>Get Pronto for <span class='strong'>$19/forever</span>.</a><span class='ua-note'>PayPal is ugly but finish checkout (or <a href='https://bitpay.com/cart/add?itemId=GJCT5PARvRo9HNnHVwc1gN' target='_blank'>pay with bitcoin</a>) and I'll email you a registration key.</span></span></p>-->
+		<input type="text" placeholder="registration key">
+		<button id="register">Register</button><i class="fa fa-cog fa-spin fa-fw loading status"></i><i class="fa fa-times failure status"></i>
+    </div>
+	<div class="ext-setting got-gold">
+		<img src="images/elephant-square-transparent-700.png" style="width:75px;margin-bottom:10px">
+        <p>Pronto registration successful. Enjoy!</p>
+		<!--<p>Your membership will renew on 10/03/2018.</p>-->
+		<p>Questions? <a href="mailto:steve@100millionbooks.org" target="_blank">Email me</a>.</p>
+    </div>
+	
+	<div class="ext-setting update-interval">
+		<i class="fa fa-star gold-indicator" aria-hidden="true"></i>
+        <p>Update books every:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="update-every" value="seconds" checked>
+            <span>3 seconds</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="update-every" value="minutes">
+            <span>30 minutes</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="update-every" value="hours">
+            <span>3 hours</span>
+          </label>
+        </div>
+    </div>
+	
+	<div class="ext-setting speed-dial">
+        <p>Show these 'speed-dial' links in the top-right:<br>(make sure you enter a title with each URL)</p>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+		<div style='margin-bottom:10px;'>
+			<input type='url' class='speed-dial-url' placeholder='site url'>
+			<input type='text' class='speed-dial-title' placeholder='site title'>
+		</div>
+    </div>
+    
+    <div class="ext-setting">
+        <p>For more book info & reviews, show links to:</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="save-to" value="goodreads" checked>
+            <span>Goodreads</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="save-to" value="librarything">
+            <span>LibraryThing</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="save-to" value="neither">
+            <span>Neither</span>
+          </label>
+        </div>
+    </div>
+    
+    <!--<div class="ext-setting">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="amazon" value="">
+                <span>Show Amazon links (we no longer participate in Amazon's affiliate program)</span>
+            </label>
+        </div>
+    </div>-->
+    
+    
+    <div style="text-align: center;">
+        <p class="settings-saved-message">Saved!</p>
+        
+        <button id="save">Save</button>
+        
+        <p class="settings-saved-message">Saved!</p>
+    </div>
+    
+    
+
+    <script src="options.js"></script>
+</body>
+</html>

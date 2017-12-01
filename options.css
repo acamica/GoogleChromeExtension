@@ -1,0 +1,153 @@
+@import url('./vendor/fonts/raleway.woff2');
+
+
+body {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 4px solid #f1c40f;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    border-bottom: 1px dashed #7f8c8d;
+}
+
+a:hover, a:focus, a:active {
+    color: inherit;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+.note {
+	font-style: iltalic;
+}
+
+.strong {
+	font-weight: 700;
+}
+
+input[type=radio], input[type=checkbox], input[type=text] {
+    margin: 0;
+}
+
+.ext-setting.no-gold, .ext-setting.got-gold {
+	display: none;
+	position: relative;
+}
+
+.ext-setting.no-gold input[type=text] {
+	height: 30px;
+	padding: 0 5px;
+	width: calc( 100% - 115px );
+	margin-top: 1px;
+}
+
+.ext-setting.no-gold i {
+	margin-left: 10px;
+	display: none;
+	position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+
+.ext-setting.no-gold i.failure {
+	color: #e74c3c;
+}
+
+.ext-setting.got-gold p:last-child {
+	margin-bottom: 0;
+}
+
+.ext-setting {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ecf0f1;
+	position: relative;
+}
+
+.ext-setting p.note {
+    color: #95a5a6;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ext-setting.speed-dial input {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.ext-setting.speed-dial .speed-dial-url {
+	width: 60%;
+}
+
+.ext-setting.speed-dial .speed-dial-title {
+	width: 35%;
+}
+
+.ext-setting i.gold-indicator {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #f1c40f;
+	display: block;
+}
+
+label {
+    font-size: 14px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.radio {
+    margin: 0;
+}
+
+.checkbox {
+    padding-left: 0;
+}
+
+#save, #register {
+    text-align: center;
+    margin: 10px auto;
+	height: 29.5px;
+}
+
+#register {
+	width: 80px;
+}
+
+.settings-saved-message {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0;
+    width: 60px;
+    text-align: center;
+    margin: 0;
+    left: calc(50% - 100px);
+}
+
+.settings-saved-message:nth-of-type(2) {
+    left: calc(50% + 35px);
+}
+
+.ua-special {
+	padding: 15px;
+    text-align: center;
+    margin: 25px 0;
+	background-color: rgba(52, 152, 219,0.25);
+}
+
+.ua-note {
+	display: block;
+	font-size: 12px;
+    font-style: italic;
+    color: #777;
+	margin-top: 25px;
+}

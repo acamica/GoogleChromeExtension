@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<script src="vendor/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="vendor/css/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="vendor/css/flat-ui.min.css">
+<link rel="stylesheet" href="vendor/css/font-awesome.min.css">
+<link rel="stylesheet" href="vendor/css/animate.min.css">
+<link rel="stylesheet" href="newTab.css">
+
+<script src="vendor/js/flat-ui.min.js"></script>
+<script src="newTab.js"></script>
+
+<title>New Tab</title>
+
+<body>
+    <div class="col-xs-6 col-xs-offset-5" id="tab-options"></div> 
+	
+	<div class="modal fade" id="first-time" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Welcome!</h4>
+          </div>
+		  <div class="modal-body">
+			
+			<p>Hi. I'm Steve, creator of 100 Million Books. I'm so glad you're here!</p>
+			
+			<p>You're joining thousands of people across 100+ countries who discover new books on here every day.</p>
+			<p>You'll see all kinds of stuff on here: modern best-sellers & popular titles, ancient classics from far corners of the world, rare out-of-print titles that never got much attention...and so much more.</p>
+			
+			<p>Oh, and every excerpt on here is <u>hand-picked</u> and painstakingly <u>verified</u> to make sure you see the text exactly as the author intended you to see it.</p>
+			
+			<p>That's exactly what makes this thing special. It isn't run by a large company trying to optimize sales or clicks. Books you see are totally random—so it's kind of like browsing your favorite second-hand bookshop, but WAY bigger (and you can do it at work).</p>
+			
+			<p class='ua-special'>By default, books update every 30 minutes. But since you're new here, you'll get instant (3-second) updates for a little while. So sit back, open some tabs, and explore!</p>
+			
+			<p>Always feel free to reach out to me directly at <a href='mailto:steve@100millionbooks.org' target='_blank'>steve@100millionbooks.org</a> with feedback, suggestions, or just to say hi. I would love to hear from you!</p>
+			
+			<p>You should also check out our <a href='https://twitter.com/100millionbooks' target='_blank'>Twitter</a>, and <a href='https://medium.com/@100millionbooks' target='_blank'>Medium</a>, and <a href='https://facebook.com/hundredmillionbooks' target='_blank'>Facebook</a> pages.</p>
+			
+			<p>Cheers,<br>Steve</p>
+          </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Great, got it!</button>
+		  </div>
+          
+        </div>
+      </div>
+    </div>
+	
+	<div class="modal fade" id="offer-time" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">How's it Going?</h4>
+          </div>
+          <div class="modal-body">
+			<p>Hi, Steve here again. Are you liking this thing, or what?!</p>
+			<p>You've seen ~50 books so far. At this point, books will start to update every 30 minutes.</p>
+			<p>If you're fine with that, no worries. But if you'd like to keep getting instant updates, consider getting a Pronto membership. It'll keep things exciting for you, and it'll help me keep this thing as awesome as possible.</p>
+			<div id='sell-box'>
+				<div class='offer no-pronto'>
+					<h5>Free <span class='price'>$0/yr</span></h5>
+					<p class='offer-bullet'><i class="fa fa-check" aria-hidden="true"></i>Access to all high-quality, hand-picked excerpts—1 random book at a time</p>
+					<p class='offer-bullet'><i class="fa fa-times" aria-hidden="true"></i>New book every 30 minutes</p>
+					<a class='offer-action btn btn-default'>No, I'll deal with the delay.</a>
+					<p class='note are-you-sure'>So many books, so little time...</p>
+				</div>
+				
+				<div class='offer yes-pronto'>
+					<h5>Pronto <span class='price'>$19/yr</span></h5>
+					<p class='offer-bullet'><i class="fa fa-check" aria-hidden="true"></i>Access to all high-quality, hand-picked excerpts—1 random book at a time</p>
+					<p class='offer-bullet'><i class="fa fa-check" aria-hidden="true"></i>New book every 3 seconds</p>
+					<a class='offer-action btn btn-primary' href='https://gum.co/xtYo' target='_blank'>Yes, carpe diem!</a>
+					<p class='note are-you-sure'>Or #YOLO, depending on your generation.</p>
+				</div>
+			</div>
+			<p>If you choose to stick with Free, you can upgrade to Pronto later through this extension's settings (just hit the <i class="fa fa-cog" aria-hidden="true"></i> icon in the bottom right of the screen).</p>
+			<p>As always, if you have any questions, I'm just an <a href='mailto:steve@100millionbooks.org' target='_blank'>email</a> or <a href='https://twitter.com/m52go' target='_blank'>tweet</a> or <a href='https://facebook.com/hundredmillionbooks' target='_blank'>Facebook message</a> away.</p>
+			
+			
+			<p>Cheers,<br>Steve</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="faves-list" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Favorites</h4>
+          </div>
+          <div class="modal-body">
+            <p class="note favorites">Be careful! These favorites aren't backed up anywhere. They'll disappear if you remove this extension or clear your browser data.</p>
+            <div class='brief-list'>
+                
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="history-list" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">History</h4>
+          </div>
+          <div class="modal-body">
+            <p class="note favorites">Your past 20 books, most recent first.</p>
+            <div class='brief-list'>
+                
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row title-area">
+        <div class="post-load">
+            <div class="col-xs-10 col-xs-offset-1">
+                <section class="fave"></section>
+                <h1 id='book-title'></h1>
+                <p id='author-year'><span id='book-author'></span>; <span id='book-year'></span><span id='suggestion-credit'></span></p>
+                <div class="top-right"></div>
+            </div>
+        </div>
+        
+        <div class="pre-load">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="top-right"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row snippet-area">
+        <div class="post-load">
+            <div class="col-xs-4 cover">
+                <img id="book-img" src="">
+            </div>
+            
+            <div class="col-xs-6 col-xs-offset-5 quote">
+                
+                <div id="book-snippet">
+                
+                </div>
+                
+                <div id="book-info">
+                
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="pre-load">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="row status-area">
+        <div class="">
+            <img src="./images/logo128.png">
+            <div id="about">
+                <p><a href="http://www.100millionbooks.org" target="_blank">100 Million Books</a> is maintained by <a href="https://twitter.com/m52go" target="_blank">Steve Jain</a> through Canon of Man LLC. <!--I'm on a mission: <a target="_blank" href="https://medium.com/@100millionbooks/why-332a1c325299">here's why I made it</a>. --><span class="visible-md-inline visible-lg-inline">Bias is evil here, so there's a <a href="http://www.100millionbooks.org/transparency" target="_blank">Transparency Report</a>. Don't ever hesitate to <a href="mailto:steve@100millionbooks.org" target="_blank">contact me</a> directly.</span></p>
+                <p class="end-note"><span class="visible-md-inline visible-lg-inline"><!-- --></span><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Help make this better! <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvfBPULpD8VOqCYjQazj7M-4amEbtdTgpc2AD6joguGi3S_w/viewform?usp=sf_link">Send a book snippet<!--Submit a book snippet here--></a>.</p>
+                <p class="end-note"><span class=""><i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-android" aria-hidden="true"></i> Want 100 Million Books...on your phone? I'm looking for 10 beta testers. <a href="mailto:steve@100millionbooks.org">Drop me a line</a>.<!--🥂 We've hit 10,000,000 books served. Which books did best? <a href='goodreads.com' target='_blank'>Find out here</a>.--></span><!--<span class="">Would you like an option to restrict mature language/content (for kids, workplace, etc)? <a href-"#">Tell me</a>.</span>--><!--<span class="note"><img src='images/elephant-square-transparent-700.png'> An organization is controlled by those who pay it. (<a href='https://medium.com/@100millionbooks/meet-loka-our-hero-mascot-for-eternal-independence-84b85a498234' target='_blank'>Source</a>)</span>--></p>
+                <p class="footer-action settings time-left" data-toggle='tooltip' data-placement='top' title='Change update interval'><i class="fa fa-clock-o" aria-hidden="true"></i> New Book in <span id='time-left'>00:00:00</span></p>
+                <p class="footer-action settings real-settings" data-toggle='tooltip' data-placement='top' title='Edit settings'><i class="fa fa-cog" aria-hidden="true"></i></p>
+                <p class="footer-action history" data-toggle='tooltip' data-placement='top' title='See past 20 books'><i class="fa fa-history" aria-hidden="true"></i></p>
+                <p class="footer-action favorites" data-toggle='tooltip' data-placement='top' title='See your favorites'><i class="fa fa-star" aria-hidden="true"></i></p>
+            </div>
+        </div>
+
+    </div>
+    
+	
+	<!--<script src="https://gumroad.com/js/gumroad.js"></script>-->
+</body>
+
+</html>
