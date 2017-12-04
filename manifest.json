@@ -1,24 +1,29 @@
 {
-   "author": "Steve Jain",
+   "author": "Sabrina Izcovich",
    "browser_action": {
       "default_icon": "images/logo128.png"
    },
    "chrome_url_overrides": {
       "newtab": "newTab.html"
    },
-   "content_security_policy": "script-src 'self' https://confidencehq.org/allthebooks/100mb-1m.php; object-src 'self'",
+   // "content_security_policy": "script-src 'self' https://confidencehq.org/allthebooks/100mb-1m.php; object-src 'self'",
+   // "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
    "description": "Descubrí una nueva propiedad CSS o un nuevo tag HTML cada vez que abrís una nueva pestaña.",
    "icons": {
       "128": "images/logo128.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwLGazeLbvw8DTkAp2ZP4K6dlZM2HPw3gTFYBifWSvg8nkwOxN9jnll7kBYvrXzk5vn9bPyUTjonFaRp6Ca0KC3g5vdzCl8Be9BpXi9QVTikg7NcOUPKOQ9i03j2wPDFSK8oHywx1YGORDfjUipi9OuM2lV1FjR2mor7Qo5IpZR8sOCN6ij1Wb0lareDVlQwu+UeE0KOBUfqNlYAjv49/HfwKaUFJ1KEEQpCI42H2QuUH3XrLltGMF/x3j/NRsf5qw5FoJoo/Qdhvxlvq6kXusmPzeQJ/KuvtBD14Y3wuFr1PuQgtQD85a6/ybKa7z85yvetlNU919c1K0WScY5XReQIDAQAB",
    "manifest_version": 2,
    "name": "Acámica",
    "options_ui": {
       "chrome_style": false,
       "page": "options.html"
    },
-   "permissions": [ "storage" ],
+   "permissions": [ "storage", "https://apis.google.com" ],
+   "background":
+    {
+        "scripts": ["vendor/jquery-3.2.1.min.js"]
+    },
    "short_name": "Acámica",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0"

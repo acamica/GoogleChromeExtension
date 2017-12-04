@@ -52,9 +52,7 @@ function prove_gold( last_checked, key ) {
 	var right_now = Date.now() / 86400000;	//unix time in days
 	
 	if( ( right_now - last_checked ) > 7 ) {
-		
-		console.log('checking membership with gumroad');
-			
+					
 		$.getJSON( 'https://confidencehq.org/allthebooks/100mb-1m.php?gk=' + key + '&callback=?' )
 
 		.done( function( json ) {
