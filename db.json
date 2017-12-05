@@ -10,7 +10,7 @@ db = [{
 		{
 			"name": "address2",
 			"description": "Define un bloque para información de contacto.",
-			"example": "<xmp><address \n Infinite Loop,\n Cupertino,CA \n 95014, USA \n ></address></xmp>"
+			"example": "<address \n Infinite Loop,\n Cupertino,CA \n 95014, USA \n ></address>"
 		},
 		{
 			"name": "address3",

@@ -6,7 +6,7 @@ window.onload = function() {
     var exa = document.getElementById('example');
     title.innerHTML = db[rand].name;
     textarea.innerHTML = db[rand].description;
-    exa.innerHTML = db[rand].example;
+    exa.innerHTML = "<xmp>"+ db[rand].example + "</xmp>";
 
 	//primera vez que se abre
 	$( '#first-time .modal-footer button' ).on( 'click', function() {
