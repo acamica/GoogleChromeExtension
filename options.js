@@ -21,7 +21,6 @@ function save_options() {
 		top_right: $('input[name=topright]:checked').val(),
 		gold_topsites: speed_dials 
 	}, function() {
-		//$( '.settings-saved-message' ).fadeIn();
 		$( ".settings-saved-message" ).animate({
 			opacity: 1
 		}, 500, function() {
@@ -155,24 +154,7 @@ function restore_options() {
 				$('input[value=hours]').prop("checked", true);
 				break;
 		}
-		  
-		  /*switch( items.amazon ) {
-			  case true:
-				$('#amazon').prop("checked", true);
-				break;
-			  case false:
-				$('#amazon').prop("checked", false);
-				break;
-		  }*/
-		  
-		  /*switch( items.top_right ) {
-			  case "topsites":
-				$('input[value=topsites]').prop("checked", true);
-				break;
-			  case "counter":
-				$('input[value=counter]').prop("checked", true);
-				break;
-		  }*/
+		 
     
 	});
 }

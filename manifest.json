@@ -8,7 +8,7 @@
    },
    // "content_security_policy": "script-src 'self' https://confidencehq.org/allthebooks/100mb-1m.php; object-src 'self'",
    // "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
-   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+   "content_security_policy": "script-src 'self' https://sizcovich.github.io; object-src 'self'",
    "description": "Descubrí una nueva propiedad CSS o un nuevo tag HTML cada vez que abrís una nueva pestaña.",
    "icons": {
       "128": "images/logo128.png"
@@ -19,7 +19,7 @@
       "chrome_style": false,
       "page": "options.html"
    },
-   "permissions": [ "storage", "https://apis.google.com" ],
+   "permissions": [ "storage" ],
    "background":
     {
         "scripts": ["vendor/jquery-3.2.1.min.js"]

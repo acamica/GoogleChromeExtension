@@ -1,4 +1,24 @@
-{
-	{ "_id": 0, "name":"base", "description":"Define la URL base de todos los links relativos de una página web. Debe ubicarse en el <head>", "ejemplo":"<base href="http:"//"htmlreference.io">"}, 
-	{ "_id": 1, "name":"address", "description":"Define un bloque para información de contacto.", "ejemplo":"<address>\n Infinite Loop,<br>\n Cupertino, CA<br>\n 95014, USA\n</address>"}
-}
+db = [{
+			"name": "base",
+			"description": "Define la URL base de todos los links relativos de una página web. Debe ubicarse en el ",
+			"example": "href"
+		}, {
+			"name": "address",
+			"description": "Define un bloque para información de contacto.",
+			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+		},
+		{
+			"name": "address2",
+			"description": "Define un bloque para información de contacto.",
+			"example": "<xmp><address \n Infinite Loop,\n Cupertino,CA \n 95014, USA \n ></address></xmp>"
+		},
+		{
+			"name": "address3",
+			"description": "Define un bloque para información de contacto.",
+			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+		},
+		{
+			"name": "address4",
+			"description": "Define un bloque para información de contacto.",
+			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+}];

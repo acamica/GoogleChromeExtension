@@ -1,149 +1,114 @@
 <!DOCTYPE html>
-
 <meta charset="utf-8">
-<!-- <script src="vendor/jquery-3.2.1.min.js"></script> -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
+<script src="vendor/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="db.json"></script>
 <link rel="stylesheet" href="vendor/css/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="vendor/css/flat-ui.min.css">
 <link rel="stylesheet" href="vendor/css/font-awesome.min.css">
 <link rel="stylesheet" href="vendor/css/animate.min.css">
 <link rel="stylesheet" href="newTab.css">
-
 <script src="vendor/js/flat-ui.min.js"></script>
 <script src="newTab.js"></script>
-
 <head>
-<title>Nueva pestaña</title>
-<link rel="./images/logo19px.png">
+   <title>Nueva pestaña</title>
+   <link rel="./images/logo19px.png">
 </head>
 <body>
-    <div class="col-xs-6 col-xs-offset-5" id="tab-options"></div> 
-	
-	<div class="modal fade" id="first-time" tabindex="-1" role="dialog">
+   <div class="col-xs-6 col-xs-offset-5" id="tab-options"></div>
+   <div class="modal fade" id="first-time" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">¡Bienvenido/a!</h4>
-          </div>
-		  <div class="modal-body">
-			
-			<p>¡Bienvenido/a a la extensión de Acámica!</p>
-			
-			<p>Acá descubrirás propiedades de CSS y etiquetas de HTML para nunca dejar de aprender.</p>
-			
-			<p class='ua-special'>Podés contactarnos a través de <a href='mailto:hola@acamica.com' target='_blank'>hola@acamica.com</a> para feedback, sugerencias o comentarios.</p>
-			
-<!-- 			<p>Contactanos a <a href='mailto:hola@acamica.com' target='_blank'>hola@acamica.com</a> con feedback, sugerencias o para felicitarnos.</p> -->
-			
-			<p>Chequeá nuestras redes <a href='https://twitter.com/acamica_com?lang=es' target='_blank'>Twitter</a> y <a href='https://facebook.com/acamica' target='_blank'>Facebook</a>.</p>
-			
-			<p>Saludos,<br>Acámica</p>
-          </div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-primary">¡Entendido!</button>
-		  </div>
-          
-        </div>
+         <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title" id="myModalLabel">¡Bienvenido/a!</h4>
+            </div>
+            <div class="modal-body">
+               <p>¡Bienvenido/a a la extensión de Acámica!</p>
+               <p>Acá descubrirás propiedades de CSS y etiquetas de HTML para nunca dejar de aprender.</p>
+               <p class='ua-special'>Podés contactarnos a través de <a href='mailto:hola@acamica.com' target='_blank'>hola@acamica.com</a> para feedback, sugerencias o comentarios.</p>
+               <!--       <p>Contactanos a <a href='mailto:hola@acamica.com' target='_blank'>hola@acamica.com</a> con feedback, sugerencias o para felicitarnos.</p> -->
+               <p>Chequeá nuestras redes <a href='https://twitter.com/acamica_com?lang=es' target='_blank'>Twitter</a> y <a href='https://facebook.com/acamica' target='_blank'>Facebook</a>.</p>
+               <p>Saludos,<br>Acámica</p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary">¡Entendido!</button>
+            </div>
+         </div>
       </div>
-    </div>
-    
-    <div class="modal fade" id="faves-list" tabindex="-1" role="dialog">
+   </div>
+   <div class="modal fade" id="faves-list" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Favoritos</h4>
-          </div>
-          <div class="modal-body">
-            <p class="note favorites">¡Cuidado! Los favoritos se eliminarán si eliminás la extensión o limpiás los datos de tu explorador de internet.</p>
-            <div class='brief-list'>
-                
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Favoritos</h4>
             </div>
-          </div>
-          
-        </div>
+            <div class="modal-body">
+               <p class="note favorites">¡Cuidado! Los favoritos se eliminarán si eliminás la extensión o limpiás los datos de tu explorador de internet.</p>
+               <div class='brief-list'>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-    
-    <div class="modal fade" id="history-list" tabindex="-1" role="dialog">
+   </div>
+   <div class="modal fade" id="history-list" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Historial</h4>
-          </div>
-          <div class="modal-body">
-            <p class="note favorites">Tus últimas 20 propiedades.</p>
-            <div class='brief-list'>
-                
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Historial</h4>
             </div>
-          </div>
-          
-        </div>
+            <div class="modal-body">
+               <!-- <p class="note favorites">Tus últimas 20 propiedades.</p> -->
+               <div class='brief-list'>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <div class="row title-area">
-        <div class="post-load">
-            <div class="col-xs-10 col-xs-offset-1">
-                <section class="fave"></section>
-                <h1 id='book-title'></h1>
-                <p id='author-year'><span id='book-author'></span>; <span id='book-year'></span><span id='suggestion-credit'></span></p>
-                <div class="top-right"></div>
+   </div>
+   <div class="row title-area">
+      <div class="post-load">
+         <div class="col-xs-10 col-xs-offset-1">
+            <h1 id='book-title'></h1>
+            <p id='author-year'><span id='book-author'></span> <span id='book-year'></span></p>
+         </div>
+      </div>
+      <div class="pre-load">
+         <div class="col-xs-10 col-xs-offset-1">
+            <div class="top-right"></div>
+         </div>
+      </div>
+   </div>
+   <div class="row snippet-area">
+      <div class="post-load">
+        <div class="col-xs-6 col-xs-offset-5 quote">
+            <div id="book-snippet">
+              <p id="description" class="visual-quote"></p>
             </div>
-        </div>
-        
-        <div class="pre-load">
-            <div class="col-xs-10 col-xs-offset-1">
-                <div class="top-right"></div>
+            <div id="book-info">
             </div>
-        </div>
-    </div>
-    
-    <div class="row snippet-area">
-        <div class="post-load">
-            <div class="col-xs-4 cover">
-                <img id="book-img" src="">
-            </div>
-            
-            <div class="col-xs-6 col-xs-offset-5 quote">
-                
-                <div id="book-snippet">
-                
-                </div>
-                
-                <div id="book-info">
-                
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="pre-load">
-            <div class="sk-fading-circle">
-              <div class="sk-circle1 sk-circle"></div>
-              <div class="sk-circle2 sk-circle"></div>
-              <div class="sk-circle3 sk-circle"></div>
-              <div class="sk-circle4 sk-circle"></div>
-              <div class="sk-circle5 sk-circle"></div>
-              <div class="sk-circle6 sk-circle"></div>
-              <div class="sk-circle7 sk-circle"></div>
-              <div class="sk-circle8 sk-circle"></div>
-              <div class="sk-circle9 sk-circle"></div>
-              <div class="sk-circle10 sk-circle"></div>
-              <div class="sk-circle11 sk-circle"></div>
-              <div class="sk-circle12 sk-circle"></div>
-            </div>
-        </div>
-    
-    </div>
-    
-    <div class="row status-area">
+         </div>
+         <div id="example" class="col-xs-4 cover">
+         </div>
+      </div>
+      <div class="pre-load">
+         <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+         </div>
+      </div>
+   </div>
+   <div class="row status-area">
       <a href="https://www.acamica.com" target="_blank"><img alt="Logo de Acamica" src="./images/acamica.png"></a>
-    </div>
-    
-	</body>
-
+   </div>
+</body>
 </html>
