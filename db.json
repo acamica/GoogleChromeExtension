@@ -1,24 +1,24 @@
 db = [{
 			"name": "base",
-			"description": "Define la URL base de todos los links relativos de una página web. Debe ubicarse en el ",
-			"example": "href"
+			"description": "Define la URL base de todos los links relativos de una página web.",
+			"example": "<base href=https://www.w3schools.com/images/ target=_blank></base>"
 		}, {
 			"name": "address",
 			"description": "Define un bloque para información de contacto.",
-			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+			"example": "<address> Infinite Loop,\n Cupertino,CA \n 95014, USA </address>"
 		},
 		{
-			"name": "address2",
-			"description": "Define un bloque para información de contacto.",
-			"example": "<address \n Infinite Loop,\n Cupertino,CA \n 95014, USA \n ></address>"
+			"name": "button",
+			"description": "Define un botón clickeable.",
+			"example": "<button>\n Enviar \n </button>"
 		},
 		{
-			"name": "address3",
-			"description": "Define un bloque para información de contacto.",
-			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+			"name": "cite",
+			"description": "Define la fuente de un trabajo creativo.",
+			"example": "Si querés inspirarte de algún ejemplo de Acámica, no olvides agregar <cite>acamica.com</cite>!"
 		},
 		{
-			"name": "address4",
-			"description": "Define un bloque para información de contacto.",
-			"example": "\n Infinite Loop,\n Cupertino,CA \n 95014, USA \n "
+			"name": "canvas",
+			"description": "Crea un área rectangular donde los autores pueden representar gráficos y animaciones programáticamente y en tiempo real.",
+			"example": "<canvas id=canvas1 height=100></canvas>"
 }];

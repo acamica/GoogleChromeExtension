@@ -2,11 +2,11 @@ var rand = Math.floor(Math.random() * db.length);
 
 window.onload = function() {
     var textarea = document.getElementById('description');
-    var title = document.getElementById('book-title');
+    var name = document.getElementById('name');
     var exa = document.getElementById('example');
-    title.innerHTML = db[rand].name;
+    name.innerHTML = db[rand].name;
     textarea.innerHTML = db[rand].description;
-    exa.innerHTML = "<xmp>"+ db[rand].example + "</xmp>";
+    exa.innerHTML = "<p>" + db[rand].example.replace(/</g, "&lt;") + "</p><pre id=code>"+ db[rand].example + "</pre>";
 
 	//primera vez que se abre
 	$( '#first-time .modal-footer button' ).on( 'click', function() {
