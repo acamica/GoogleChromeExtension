@@ -6,8 +6,6 @@
    "chrome_url_overrides": {
       "newtab": "newTab.html"
    },
-   // "content_security_policy": "script-src 'self' https://confidencehq.org/allthebooks/100mb-1m.php; object-src 'self'",
-   // "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
    "content_security_policy": "script-src 'self' https://sizcovich.github.io; object-src 'self'",
    "description": "Descubrí una nueva propiedad CSS o un nuevo tag HTML cada vez que abrís una nueva pestaña.",
    "icons": {
@@ -15,14 +13,10 @@
    },
    "manifest_version": 2,
    "name": "Acámica",
-   "options_ui": {
-      "chrome_style": false,
-      "page": "options.html"
-   },
    "permissions": [ "storage" ],
    "background":
     {
-        "scripts": ["vendor/jquery-3.2.1.min.js"]
+        "scripts": ["ext/jquery-3.2.1.min.js"]
     },
    "short_name": "Acámica",
    "update_url": "https://clients2.google.com/service/update2/crx",

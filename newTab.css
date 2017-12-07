@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src:
-    url(./vendor/fonts/raleway.woff2) format('woff');
+    url(./ext/fonts/raleway.woff2) format('woff');
 }
 
 
@@ -408,10 +408,6 @@ p.visual-quote {
     margin: 4px 2px;
 }
 
-.footer-action i.fa-clock-o {
-    /*animation: blinker 1.0s cubic-bezier(.5, 0, 1, 1) infinite alternate;*/
-}
-
 .row.status-area #about p.footer-action.settings.real-settings {
 	margin-right: 10px;
 }
@@ -564,19 +560,6 @@ p.visual-quote {
     transition: all 0.3s;
 }
 
-#faves-list .modal-header, #history-list .modal-header {
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-#faves-list .modal-dialog, #history-list .modal-dialog {
-    max-height: 90vh;
-}
-
-#faves-list .modal-content, #history-list .modal-content {
-    max-height: 90vh;
-    overflow: auto;
-}
 
 #swag-order .modal-dialog {
 	width: 75vw;
@@ -631,7 +614,7 @@ p.visual-quote {
     border: 1px solid #000;
 	background-color: rgba(241, 196, 15, 1.0);
 }
-
+/*
 .row.fave-item {
     margin: 0;
     min-height: 125px;
@@ -680,7 +663,7 @@ p.visual-quote {
     color: #bdc3c7;
     padding: 15px;
     cursor: pointer;
-}
+}*/
 
 p.nothing-yet {
     text-align: center;
@@ -1100,7 +1083,7 @@ p.nothing-yet {
 	background-color: #33ace3;
 }
 
-#offer-time .modal-header {
+/*#offer-time .modal-header {
 	text-align: center;
 }
 
@@ -1177,8 +1160,8 @@ p.nothing-yet {
     margin: 0 auto;
     text-align: center;
 	color: rgba(149, 165, 166,1.0);
-}
-
+}*/
+/*
 #offer-time #sell-box .offer .offer-bullet {
 	margin-left: 25px;
     position: relative;
@@ -1212,7 +1195,7 @@ p.nothing-yet {
 #offer-time #sell-box .offer.yes-pronto .offer-action:hover, #offer-time #sell-box .offer.yes-pronto .offer-action:focus, #offer-time #sell-box .offer.yes-pronto .offer-action:active {
 	background-color: #33ace3;
 }
-
+*/
 
 @keyframes blinker {
     from { opacity: 1; }
@@ -1227,27 +1210,6 @@ p.nothing-yet {
     box-shadow: 0 0 50px #ecf0f1;
   }
 }
-
-
-/******************************
-* fave animation from https://cssanimation.rocks/twitter-fave/
-******************************/
-.fave {
-    width: 70px;
-    height: 50px;
-    background: url(images/fave.png) no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    top: calc((20vh - 60px) / 2);
-    left: -70px;
-    cursor: pointer;
-}
-
-.faved {
-    background-position: -3519px 0;
-    transition: background 1s steps(55);
-}
-
 
 
 /******************************
