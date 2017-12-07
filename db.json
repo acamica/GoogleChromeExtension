@@ -1,24 +1,34 @@
-db = [{
+db = [{		"language": "html",
 			"name": "base",
 			"description": "Define la URL base de todos los links relativos de una página web.",
-			"example": "<base href=https://www.w3schools.com/images/ target=_blank></base>"
+			"example": {"code": "<base href=https://www.w3schools.com/images/ target=_blank></base>", "image": ""},
+			"reference": ""
 		}, {
+			"language": "html",
 			"name": "address",
 			"description": "Define un bloque para información de contacto.",
-			"example": "<address> Infinite Loop,\n Cupertino,CA \n 95014, USA </address>"
+			"example": {"code": "<address> Infinite Loop,\n Cupertino,CA \n 95014, USA </address>", "image": ""},
+			"reference": ""
 		},
 		{
+			"language": "html",
 			"name": "button",
 			"description": "Define un botón clickeable.",
-			"example": "<button>\n Enviar \n </button>"
+			"example": {"code": "<button>\n Enviar \n </button>", "image": ""},
+			"reference": ""
 		},
 		{
+			"language": "html",
 			"name": "cite",
 			"description": "Define la fuente de un trabajo creativo.",
-			"example": "Si querés inspirarte de algún ejemplo de Acámica, no olvides agregar <cite>acamica.com</cite>!"
+			"example": {"code": "Si querés inspirarte de algún ejemplo de Acámica, no olvides agregar <cite>acamica.com</cite>!", "image": ""},
+			"reference": ""
 		},
 		{
+			"language": "html",
 			"name": "canvas",
 			"description": "Crea un área rectangular donde los autores pueden representar gráficos y animaciones programáticamente y en tiempo real.",
-			"example": "<canvas id=canvas1 height=100></canvas>"
-}];
+			"example": {"code": "<canvas id=canvas1 height=100></canvas>", "image": ""},
+			"reference": ""
+		},
+];
