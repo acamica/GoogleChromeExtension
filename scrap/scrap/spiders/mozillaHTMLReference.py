@@ -12,7 +12,6 @@ class QuotesSpider(scrapy.Spider):
         # # Every element is inside an 'a' tag
         for elem in response.xpath('.//a[contains(@href, "/es/docs/Web/HTML/Elemento/")]'):
             # Construction of the elements, they contain a reference, a description, a name and an example
-            # print elem.xpath('./node()').extract_first()
             element = {
                 'name': elem.xpath('./node()').extract_first(),
                 'reference': 'https://developer.mozilla.org' + elem.css('a').xpath('@href').extract_first(),
@@ -30,7 +29,6 @@ class QuotesSpider(scrapy.Spider):
         newExample = {
             'image': ''
         }
-        # newExample['code'] = response.css('pre::text').extract_first()
-        newExample['code'] = response.xpath('//pre/node()').extract()
+        newExample['code'] = response.xpath('//pre/node()').extract_first();
         element['example'] = newExample
         return element

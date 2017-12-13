@@ -8,7 +8,7 @@ window.onload = function() {
     if(db[rand]['description'] != ''){
         textarea.innerHTML = db[rand].description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
-    if(db[rand]['example'].code != ''){
+    if(db[rand]['example'].code != null){
         exa.innerHTML = "<p>" + db[rand].example.code.replace(/</g, "&lt;") + "</p><pre id=code>"+ db[rand].example.code + "</pre>";
     }
 
