@@ -143,7 +143,7 @@ db = [{
 		"description": "El elemento HTML <link> especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. Este elemento es más frecuentemente usado para enlazar hojas de estilos.",
 		"example": {
 			"image": "",
-			"code": "<link href=\"style.css\" rel=\"stylesheet\">\n"
+			"code": "<link href=\"http://htmlreference.io/css/website.css\" rel=\"stylesheet\">\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;link&gt;</code>"
@@ -540,40 +540,40 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/button",
-		"description": "button = botón.",
+		"description": "Define un botón oprimible.",
 		"example": {
 			"image": "",
-			"code": null
+			"code": "<button>\nEnviar\n </button>"
 		},
 		"language": "html",
 		"name": "<code>&lt;button&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/col",
-		"description": "Permite especificar propiedades para una columna o un grupo de ellas.",
+		"description": "Permite especificar propiedades para una columna o un grupo de ellas en una tabla.",
 		"example": {
 			"image": "",
-			"code": "<span class=\"nowiki\">\n\n </span>"
+			"code": "<table>\n<colgroup>\n<col style=\"background-color: hotpink;\">\n<col span=\"2\" style=\"background-color: springgreen;\">\n</colgroup>\n<tr>\n<td>John Lennon</td>\n<td>Guitarra</td>\n<td>1960–1969</td>\n</tr>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;col&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/colgroup",
-		"description": "colgroup de column group = Grupo de columnas. Permite crear grupos de columnas.",
+		"description": "Define un grupo de columnas en una tabla.",
 		"example": {
 			"image": "",
-			"code": "<span class=\"nowiki\">\n\n </span>"
+			"code": "<table>\n<colgroup>\n<col style=\"background-color: hotpink;\">\n<col span=\"2\" style=\"background-color: springgreen;\">\n</colgroup>\n<tr>\n<td>Pedro</td>\n<td>Estudiante</td>\n<td>Ingeniería Industrial</td>\n</tr>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;colgroup&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/tr",
-		"description": "El elemento HTML fila de tabla (table row) <tr> define una fila de celdas en una tabla. Estas pueden ser una mezcla de elementos <td> y <th>.",
+		"description": "El elemento HTML fila de tabla (table row) <tr> define una fila en una tabla.",
 		"example": {
 			"image": "",
-			"code": null
+			"code": "<table>\n<tr>\n<td>Color</td>\n<td>Animal</td>\n</tr>\n<tr>\n<td>País</td>\n<td>Película</td>\n</tr>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;tr&gt;</code>"
@@ -583,24 +583,24 @@ db = [{
 		"description": "El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.",
 		"example": {
 			"image": "",
-			"code": "var e = getElementById(\"someFileInputElement\");\ne.value = \"foo\";\n"
+			"code": "var e = getElementById(\"someFileInputElement\");\ne.value = \"foo\";"
 		},
 		"language": "html",
 		"name": "<code>&lt;input&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/th",
-		"description": "El elemento HTML <th> define una celda como la cabecera de una columna en una tabla. La naturaleza exacta de esta cabecera está definida por los atributos scope y headers.",
+		"description": "El elemento HTML <th> define la cabecera de una columna en una tabla. Debe ser un hijo directo de un <tr>.",
 		"example": {
 			"image": "",
-			"code": null
+			"code": "<table>\n<thead>\n<tr>\n<th colspan=\"4\">Ganadores de la copa mundial</th>\n</tr>\n<tr>\n<td colspan=\"2\">Location</td>\n<td colspan=\"2\">Puntaje</td>\n</tr>\n<tr>\n<td>Continente</td>\n<td>País</td>\n<td>Primera</td>\n<td>Total</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Argentina</td>\n<td>1978</td>\n<td>2</td>\n </tr>\n</tbody>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;th&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/noscript",
-		"description": "noscript de -no script . Aporta contenidos alternativos al elemento script. las aplicaciones de usuario que no soporten scripts deben mostrar en su lugar el contenido de este elemento.",
+		"description": "noscript de -no script. Aporta contenidos alternativos al elemento script.",
 		"example": {
 			"image": "",
 			"code": "<script type=\"text/javascript\">\n Aquí un script que genera un listado\n</script>\n\n<"
@@ -610,17 +610,17 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/td",
-		"description": "El elemento HTMLCelda de tabla (<td>) define la celda de una tabla que contiene datos. Esta participa en el modelo de tablas.",
+		"description": "El elemento HTMLCelda de tabla (<td>) define la celda de una tabla que contiene datos. Debe ser un hijo directo de un <tr>",
 		"example": {
 			"image": "",
-			"code": "Este atributo contiene una lista de cadenas separadas por espacios . Cada cadena es el ID de un grupo de celdas a las que esta cabecera se aplica."
+			"code": "<table><tr>\n<td>Nombre</td>\n<td>Apellido</td>\n<td>Edad</td>\n</tr></table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;td&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/script",
-		"description": "El elemento HTML Script (<script>) se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML o XHTML.",
+		"description": "El elemento <script> se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML o XHTML.",
 		"example": {
 			"image": "",
 			"code": "<!-- HTML4 y (x)HTML -->\n<script type=\"text/javascript\" src=\"javascript.js\"></script>\n\n<!-- HTML5 -->\n<script src=\"javascript.js\"></script>\n"
@@ -630,10 +630,10 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/del",
-		"description": "La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !",
+		"description": "Define texto que fue eliminado.",
 		"example": {
 			"image": "",
-			"code": " Ejemplo de ins en linea:\n\n   <p>\n       El agua es insípida <del>y húmeda.</del> <ins>inodora e incolora.</ins>\n   </p>\n\n Ejemplo de ins en bloque:\n\n   <p>\n       El agua es insípida.\n   </p>\n\n <del> \n   <p>\n       y húmeda.\n   </p>\n </del>\n"
+			"code": "Para escribir abreviaturas, usa <del cite=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym\">acronym</del> <ins>abbr</ins>."
 		},
 		"language": "html",
 		"name": "<code>&lt;del&gt;</code>"
@@ -643,7 +643,7 @@ db = [{
 		"description": "El Elemento de Tabla HTML (<table>) representa datos en dos o mas dimensiones.",
 		"example": {
 			"image": "",
-			"code": "<!-- Simple table -->\n<table>\n  <tr>\n    <td>John</td>\n    <td>Doe</td>\n  </tr>\n  <tr>\n    <td>Jane</td>\n    <td>Doe</td>\n  </tr>\n</table>\n\n<!-- Simple table with header -->\n<table>\n  <tr>\n    <th>First name</th>\n    <th>Last name</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>Doe</td>\n  </tr>\n  <tr>\n    <td>Jane</td>\n    <td>Doe</td>\n  </tr>\n</table>\n\n<!-- Table with thead, tfoot, and tbody -->\n<table>\n  <thead>\n    <tr>\n      <th>Header content 1</th>\n      <th>Header content 2</th>\n    </tr>\n  </thead>\n  <tfoot>\n    <tr>\n      <td>Footer content 1</td>\n      <td>Footer content 2</td>\n    </tr>\n  </tfoot>\n  <tbody>\n    <tr>\n      <td>Body content 1</td>\n      <td>Body content 2</td>\n    </tr>\n  </tbody>\n</table>\n\n<!-- Table with colgroup -->\n<table>\n  <colgroup span=\"4\" class=\"columns\"></colgroup>\n  <tr>\n    <th>Countries</th>\n    <th>Capitals</th>\n    <th>Population</th>\n    <th>Language</th>\n  </tr>\n  <tr>\n    <td>USA</td>\n    <td>Washington D.C.</td>\n    <td>309 million</td>\n    <td>English</td>\n  </tr>\n  <tr>\n    <td>Sweden</td>\n    <td>Stockholm</td>\n    <td>9 million</td>\n    <td>Swedish</td>\n  </tr>\n</table>\n\n<!-- Table with colgroup and col -->\n<table>\n  <colgroup>\n    <col class=\"column1\">\n    <col class=\"columns2plus3\" span=\"2\">\n  </colgroup>\n  <tr>\n    <th>Lime</th>\n    <th>Lemon</th>\n    <th>Orange</th>\n  </tr>\n  <tr>\n    <td>Green</td>\n    <td>Yellow</td>\n    <td>Orange</td>\n  </tr>\n</table>\n\n<!-- Simple table with caption -->\n<table>\n  <caption>Awesome caption</caption>\n  <tr>\n    <td>Awesome data</td>\n  </tr>\n</table>\n"
+			"code": "<table><tr>\n<td>John Lennon</td>\n<td>Guitarra</td>\n</tr>\n<tr>\n<td>Paul McCartney</td>\n<td>Bajo</td>\n</tr></table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;table&gt;</code>"
@@ -670,20 +670,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ins",
-		"description": "La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !",
+		"description": "Define texto que fue insertado.",
 		"example": {
 			"image": "",
-			"code": " Ejemplo de ins en linea:\n\n   <p>\n       El agua es insipida, <ins>inodora e incolora.</ins>\n   </p>\n\n Ejemplo de ins en bloque:\n\n   <p>\n       El agua es insipida.\n   </p>\n\n <ins> \n   <p>\n       y además inodora e incolora.\n   </p>\n </ins>\n"
+			"code": " Ejemplo de ins en linea:\n  <p>\n       El agua es insipida, <ins>inodora e incolora.</ins>\n   </p>\n\n Ejemplo de ins en bloque:\n   <p>\n       El agua es insipida.\n   </p>\n <ins> \n   <p>\n       y además inodora e incolora.\n   </p>\n </ins>"
 		},
 		"language": "html",
 		"name": "<code>&lt;ins&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/embed",
-		"description": "",
+		"description": "Define un contenedor para aplicación externa.",
 		"example": {
 			"image": "",
-			"code": null
+			"code": "<embed src=\"https://www.youtube.com/embed/kmk43_2dtn0\" width=\"640\" height=\"480\">"
 		},
 		"language": "html",
 		"name": "<code>&lt;embed&gt;</code>"
@@ -693,47 +693,47 @@ db = [{
 		"description": "param de \"parameter\" = parámetro. Permite especificar parámetros de ejecución para un objeto.",
 		"example": {
 			"image": "",
-			"code": "<span class=\"nowiki\">\n\n </span>"
+			"code": "<object title = \"Objeto test.\" classid = \"java.class\">\n<param name = \"width\" value = \"600\" />\n<param name = \"height\" value = \"400\" />\n</object>"
 		},
 		"language": "html",
 		"name": "<code>&lt;param&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/canvas",
-		"description": "",
+		"description": "Define un elemento donde se pueden dibujar gráficos.",
 		"example": {
 			"image": "",
-			"code": "<"
+			"code": "<canvas>Canvas no es soportado en su explorador</canvas>"
 		},
 		"language": "html",
 		"name": "<code>&lt;canvas&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/area",
-		"description": "area de area=área",
+		"description": "Define un área interactivo dentro de un mapa.",
 		"example": {
 			"image": "",
-			"code": "<span class=\"nowiki\">      \n &lt;object data=\"http://developer.mozilla.org/wiki-images/es/3/39/Firefoxlogo.png\" \n         usemap=\"#map1\" type=\"image/png\" \n         width=\"135\" height=\"155\"&gt;\n\n   &lt;map name=\"map1\"&gt;\n     &lt;area href=\"http://www.mozilla.com/firefox/\" \n       alt=\"El navegador\" \n       shape=\"rect\" \n       coords=\"0,0,60,155\"&gt;\n\n     &lt;area href=\"http://www.mozilla.com/thunderbird/\" \n       alt=\"El gestor de correo\" \n       shape=\"rect\" \n       coords=\"75,0,135,155\"&gt;\n   &lt;/map&gt;\n &lt;/object&gt;\n </span>"
+			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#world-continents\">\n<map name=\"world-continents\">\n<area title=\"South America\" href=\"https://en.wikipedia.org/wiki/South_America\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
 		},
 		"language": "html",
 		"name": "<code>&lt;area&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/map",
-		"description": "descripción de uno o dos párrafos",
+		"description": "Define un mapa interactivo sobre una imagen.",
 		"example": {
 			"image": "",
-			"code": "  <>\n    \n      \n   \n  </>\n"
+			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#world-continents\">\n<map name=\"world-continents\">\n<area title=\"South America\" href=\"https://en.wikipedia.org/wiki/South_America\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
 		},
 		"language": "html",
 		"name": "<code>&lt;map&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img",
-		"description": "<img>",
+		"description": "Define una imagen insertada en la página web.",
 		"example": {
 			"image": "",
-			"code": "<code class=\"language-html\"><span class=\"tag token\"><span class=\"tag token\"><span class=\"punctuation token\">&lt;</span>img</span> <span class=\"attr-name token\">src</span><span class=\"attr-value token\"><span class=\"punctuation token\">=</span><span class=\"punctuation token\">\"</span>mdn-logo-sm.png<span class=\"punctuation token\">\"</span></span> <span class=\"attr-name token\">alt</span><span class=\"attr-value token\"><span class=\"punctuation token\">=</span><span class=\"punctuation token\">\"</span>MDN<span class=\"punctuation token\">\"</span></span><span class=\"punctuation token\">&gt;</span></span></code>"
+			"code": "<img src=\"http://htmlreference.io/images/sunset.jpg\" alt=\"Picture of a Ha Long Bay sunset\">"
 		},
 		"language": "html",
 		"name": "<code>&lt;img&gt;</code>"
@@ -750,20 +750,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/var",
-		"description": "La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !",
+		"description": "Define una variable de forma matemática.",
 		"example": {
 			"image": "",
-			"code": "<p>\nel bucle no se detendrá hasta que <var>Faltan</var> sea igual a 0.\n</p>\n"
+			"code": "El valor de <var>x</var> es 12."
 		},
 		"language": "html",
 		"name": "<code>&lt;var&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/wbr",
-		"description": "Por la misma razón el elemento <wbr> no introduce un guión en el salto de línea  .  Para hacer aparecer un guión solo al final de la línea , usar la entidad de caracter del  guión de separación  (&﻿shy;) en su lugar.",
+		"description": "Por la misma razón el elemento <wbr> no introduce un guión en el salto de línea. Para hacer aparecer un guión solo al final de la línea, usar la entidad de caracter del guión de separación (&﻿shy;) en su lugar.",
 		"example": {
 			"image": "",
-			"code": "<p>http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</p>\n"
+			"code": "este<wbr>es un<wbr>ejemplo."
 		},
 		"language": "html",
 		"name": "<code>&lt;wbr&gt;</code>"
@@ -780,10 +780,10 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/u",
-		"description": "La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !",
+		"description": "Subraya un texto.",
 		"example": {
 			"image": "",
-			"code": "  <p>\n       Texto normal y... <u>Texto subrayado</u>\n  </p>\n"
+			"code": "\nTexto normal y... <u>Texto subrayado</u>\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;u&gt;</code>"
@@ -793,7 +793,7 @@ db = [{
 		"description": "El elemento HTML <sup> define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto, y generalmente más pequeño, que el tramo principal del texto, es decir, en superíndice.",
 		"example": {
 			"image": "",
-			"code": "<code class=\"language-html\"><span class=\"tag token\"><span class=\"tag token\"><span class=\"punctuation token\">&lt;</span>p</span><span class=\"punctuation token\">&gt;</span></span>Este texto es <span class=\"tag token\"><span class=\"tag token\"><span class=\"punctuation token\">&lt;</span>sup</span><span class=\"punctuation token\">&gt;</span></span>superíndice<span class=\"tag token\"><span class=\"tag token\"><span class=\"punctuation token\">&lt;/</span>sup</span><span class=\"punctuation token\">&gt;</span></span><span class=\"tag token\"><span class=\"tag token\"><span class=\"punctuation token\">&lt;/</span>p</span><span class=\"punctuation token\">&gt;</span></span></code>"
+			"code": "La \"potencia de 2\" es 2<sup>n</sup> donde n es un entero."
 		},
 		"language": "html",
 		"name": "<code>&lt;sup&gt;</code>"
