@@ -1,4 +1,6 @@
-# Google Chrome Extension to keep learning HTML and CSS
+# Learn Tab
+
+**A Google Chrome Extension to keep learning HTML and CSS**
 
 The extension shows a different HTML tag or CSS property every time you open a new tab. The tag or property comes with a description and an example to help you discover it.
 
