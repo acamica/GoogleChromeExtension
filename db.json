@@ -1,7 +1,9 @@
-db = [{
+db = [
+	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/html",
 		"description": "El elemento HTML <html> representa la raíz de un documento HTML. El resto de elementos descienden de él.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<!DOCTYPE html>\n<html>\n<head>Estoy dentro del head del HTML</head>\n<body>Estoy dentro del body del HTML</body>\n</html>\n"
 		},
@@ -10,8 +12,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header",
-		"description": "El elemento de HTML Header representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.",
+		"description": "El elemento de HTML Header representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, un formulario de búsqueda o cosas parecidas.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<header>\n <h1>TITULO DE LA WEB</h1> \n<h2>Breve descripción de la página web.</h2> \n </header>"
 		},
@@ -22,6 +25,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/hgroup",
 		"description": "El elemento de grupo de cabeceras HTML (<hgroup>) representa el encabezado de una sección.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<hgroup>\n<h1>Título principal</h1>\n<h2>Título secundario</h2>\n</hgroup>"
 		},
@@ -32,6 +36,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav",
 		"description": "El elemento nav es un contenedor para enlaces de navegación que proveen formas de acceder a las secciones del sitio web, así como a documentos externos.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "<nav> \n<a href=\"https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav\">Más info</a>\n </nav>"
 		},
@@ -40,18 +45,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section",
-		"description": "El elemento de HTML section (<section>) representa una sección genérica de un documento. Es una etiqueta semántica y su funcionalidad principal es estructurar semánticamente un documento.",
+		"description": "El elemento de HTML section (<section>) representa una sección genérica en un documento. Es una etiqueta semántica y su funcionalidad principal es estructurar semánticamente un documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<section>Una sección</section>"
+			"code": "<section>Una sección</section>\n<section>Otra sección</section>"
 		},
 		"language": "html",
 		"name": "<code>&lt;section&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/blockquote",
-		"description": "blockquote -cita en bloque. Crea citas en bloque, marca las citas a otros autores o documentos.",
+		"description": "<blockquote> de \"cita en bloque\" crea citas en un bloque, asocia las citas a autores o a documentos.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<blockquote cite=\"https://es.wikipedia.org/wiki/Marie_Curie\">\n Sé menos curioso sobre las personas y más curioso sobre las ideas.\n </blockquote>"
 		},
@@ -62,6 +69,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer",
 		"description": "El Elemento HTML Footer (<footer>) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección. Generalmente contiene información acerca del autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<footer>\n Copyright &copy; 2012-2013\n </footer>"
 		},
@@ -72,8 +80,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dd",
 		"description": "Define un elemento en una lista de definiciones.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<dl>\n <dt>Web</dt>\n <dd>La parte de internet que contiene sitios y páginas web</dd>\n <dt>HTML</dt>\n <dd>Lenguaje de marcado para crear páginas web</dd>\n <dt>CSS</dt>\n <dd>Una tecnología que le da estilo a HTML</dd>\n </dl>"
+			"code": "<dl>\n <dt>HTML</dt>\n <dd>Lenguaje de marcado para crear páginas web</dd>\n <dt>CSS</dt>\n <dd>Una tecnología que le da estilo a HTML</dd>\n </dl>"
 		},
 		"language": "html",
 		"name": "<code>&lt;dd&gt;</code>"
@@ -82,6 +91,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article",
 		"description": "Define un bloque autocontenido que puede existir en cualquier contexto. Puede tener sus propios header, footer, secciones, etc. Es útil para una lista de posteos de blog.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<article>\n<header>\n<h1>Mi blog</h1></header>\n<section>\n<p>Esta es una entrada de mi blog.</p>\n</section>\n</article>"
 		},
@@ -92,6 +102,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/body",
 		"description": "El Elemento HTML <body> representa el contenido de un documento HTML. Sólo puede haber un elemento <body> en un documento.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Metadata del documento -->\n</head>\n <body>\n <!-- Contenido del documento -->\n</body>\n</html>"
 		},
@@ -102,8 +113,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside",
 		"description": "Define un bloque de contenido relacionado con el contenido principal. Se muestra en una barra lateral generalmente.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<main>\n<h1>Mi blog post</h1>\n<p>Esta es una entrada de mi blog.</p>\n</main>\n <aside>\n<h3>Sobre mí</h3>\n<p>Soy programadora en potencia, me gusta la naturaleza y la chocolatada caliente.</p>\n</aside>"
+			"code": "<main>\n<h3>Mi blog post</h3>\n<p>Esta es una entrada de mi blog.</p>\n</main>\n <aside>\n<h5>Sobre mí</h5>\n<p>Soy programadora en potencia, me gusta la naturaleza y la chocolatada caliente.</p>\n</aside>"
 		},
 		"language": "html",
 		"name": "<code>&lt;aside&gt;</code>"
@@ -112,6 +124,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/style",
 		"description": "Define el contenedor para agregar CSS a la página web.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<style>\nh1 {color:red;}\n</style>\n<h1>Título</h1>"
 		},
@@ -120,8 +133,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/meta",
-		"description": "meta de \"metainformation\" - metainformación. Sirve para aportar información sobre el documento.",
+		"description": "<meta> de \"metainformation\" -metainformación sirve para aportar información sobre el documento.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<meta charset=\"UTF-8\">"
 		},
@@ -130,8 +144,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/link",
-		"description": "El elemento HTML <link> especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. Este elemento es más frecuentemente usado para enlazar hojas de estilos.",
+		"description": "El elemento HTML <link> especifica la relación entre el documento actual y un recurso externo. Este elemento es frecuentemente usado para enlazar achivos de estilo.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<link href=\"http://htmlreference.io/css/website.css\" rel=\"stylesheet\">\n"
 		},
@@ -142,6 +157,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/color",
 		"description": "El <input type=\"color\"> se utiliza para crear un campo de entrada que permite al usuario seleccionar un color.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<input type=\"color\">"
 		},
@@ -152,6 +168,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/checkbox",
 		"description": "El elemento HTML <input type=\"checkbox\"> es un elemento de entrada que permite seleccionar uno o varios valores.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<label><input type=\"checkbox\"> Este es mi primer checkbox</label>"
 		},
@@ -160,8 +177,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/password",
-		"description": "El elemento HTML <input type=\"password\"> es una versión específica del elemento <input> usado para crear un campo en el que escribir contraseñas.",
+		"description": "El elemento HTML <input type=\"password\"> es una versión específica del elemento <input> usado para crear un campo para escribir contraseñas.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<input type=\"password\">"
 		},
@@ -172,6 +190,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address",
 		"description": "El elemento HTML <address> aporta información de contacto para su <article> más cercano o ancestro <body>; en el último caso lo aplica a todo el documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<address>\nAcámica<br>\nEl Salvador 4052<br>\n1175, CABA<br>\nArgentina</address>\n"
 		},
@@ -182,6 +201,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/search",
 		"description": "Los elementos <input> tipo \"search\" son campos de texto diseñados para que el usuario introduzca términos de búsqueda.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "Buscar: <input type=\"search\">"
 		},
@@ -192,56 +212,51 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/title",
 		"description": "Define el título de una página web, mostrada en la solapa del explorador.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<head>\n<title>Título</title>\n... otros elementos de cabecera...\n</head>\n"
 		},
 		"language": "html",
-		"name": "title"
-	},
-	{
-		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/Bot%C3%B3n",
-		"description": "El elemento HTML <input type=\"button\"> es una versión específica del elemento <input> que se usa para crear un botón en el que se puede hacer click sin ningún valor por defecto. Ha sido sustituido en HTML5 por el elemento <button>.",
-		"example": {
-			"image": "",
-			"code": "<input type=\"button\" value=\"Apretá\">"
-		},
-		"language": "html",
-		"name": "<code>&lt;input type =\"button\"&gt;</code>"
+		"name": "<code>&lt;title&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/picture",
-		"description": "El elemento HTML <picture> es un contenedor usado para especificar múltiples elementos <source> para un <img> específico contenido en él.",
+		"description": "El elemento HTML <picture> es un contenedor usado para especificar múltiples elementos <source> para un <img> específico contenido en él. Permite incluir diversas imágenes en un diseño responsive para evitar la deformación de una imagen cuando la página cambia de tamaño.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<picture>\n <source srcset=\"/images/acamica.png\" media=\"(min-width: 600px)\">\n <img src=\"/images/acamica.png\" alt=\"Acámica\">\n</picture>\n"
+			"code": "<picture>\n <source srcset=\"/images/acamica.png\" media=\"(min-width: 600px)\">\n <source srcset=\"/images/acamica.png\" media=\"(min-width: 465px)\">\n <img src=\"/images/logo128.png\" alt=\"Acámica\">\n</picture>\n"
 		},
 		"language": "html",
-		"name": "picture"
+		"name": "<code>&lt;picture&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/iframe",
 		"description": "Define un contenedor para un contexto de navegación anidado: permite incluir una página web dentro de otra.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<iframe src=\"http://cssreference.io\">\nText para exploradores que no soporten iframe\n</iframe>"
 		},
 		"language": "html",
-		"name": "iframe"
+		"name": "<code>&lt;iframe&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head",
 		"description": "El elemento HTML <head> provee información general (metadatos) acerca del documento, incluyendo su título, enlaces a scripts y hojas de estilos.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<html>\n  <head>\n    <title>Título del documento</title>\n  </head>\n</html>\n"
 		},
 		"language": "html",
-		"name": "head"
+		"name": "<code>&lt;head&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/Elementos_t%C3%ADtulos",
 		"description": "Los elementos de encabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que presenta.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<h1>Encabezado nivel 1</h1>\n<h2>Encabezado nivel 2</h2>\n<h3>Encabezado nivel 3</h3>\n<h4>Encabezado nivel 4</h4>\n<h5>Encabezado nivel 5</h5>\n<h6>Encabezado nivel 6</h6>\n"
 		},
@@ -249,19 +264,10 @@ db = [{
 		"name": "Elementos encabezado"
 	},
 	{
-		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/%3Cdata%3E",
-		"description": "El Elemento HTML <data> vincula un contenido dado con una traducción legible por una máquina.",
-		"example": {
-			"image": "",
-			"code": "Nuevos productos\n<ul>\n <li><data value=\"390\">Ketchup</data></li>\n <li><data value=\"396\">Mostaza</data></li>\n</ul>\n"
-		},
-		"language": "html",
-		"name": "<data>"
-	},
-	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/strike",
 		"description": "Tacha el texto que contiene.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Texto normal y... <strike>Texto tachado</strike>"
 		},
@@ -272,26 +278,18 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/base",
 		"description": "El elemento HTML <base> especifica la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento. Sólo puede haber un elemento <base> en un documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<base href=\"http://htmlreference.io\">\n<a href=\"/element/base\">The HTML base element</a>"
 		},
 		"language": "html",
-		"name": "<base>"
-	},
-	{
-		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/tt",
-		"description": "Muestra el texto marcado con una fuente de ancho fijo.",
-		"example": {
-			"image": "",
-			"code": "\n Texto normal y... <tt>Texto con formato teletipo</tt>\n"
-		},
-		"language": "html",
-		"name": "<code>&lt;tt&gt;</code>"
+		"name": "<code>&lt;base&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/center",
-		"description": "El elemento center (centro) crea una caja en bloque con el contenido centrado. Es equivalente a un div con align=\"center\".",
+		"description": "El elemento center (centro) crea un bloque con el contenido centrado. Es equivalente a un div con align=\"center\".",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<center>\nElemento centrado\n</center>"
 		},
@@ -299,19 +297,10 @@ db = [{
 		"name": "<code>&lt;center&gt;</code>"
 	},
 	{
-		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/big",
-		"description": "Muestra el texto marcado con un tamaño de fuente más grande.",
-		"example": {
-			"image": "",
-			"code": "<p>Texto normal y... &lt;big&gt;Texto más grande&lt;/big&gt;</p>"
-		},
-		"language": "html",
-		"name": "<code>&lt;big&gt;</code>"
-	},
-	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/font",
-		"description": "font -fuente. Indica el tamaño, color, o fuente del texto que contiene.",
+		"description": "<font> (fuente) indica el tamaño, color, o fuente del texto que contiene.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Texto normal y ...\n<font size=\"5\" color=\"#0000ff\"> texto distinto. </font>"
 		},
@@ -322,6 +311,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/template",
 		"description": "El elemento HTML <template> es un mecanismo para mantener el contenido del lado del cliente que no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado durante el tiempo de ejecución empleando JavaScript.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<template id=\"filaProducto\">\n<tr>\n<td class=\"registro\"></td>\n<td></td>\n</tr>\n</template>"
 		},
@@ -332,6 +322,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/acronym",
 		"description": "La etiqueta <acronym> nos permite incluir una explicación de una porción de texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": " <acronym title=\"World Wide Web\" lang=\"en\">WWW</acronym>"
 		},
@@ -340,8 +331,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dialog",
-		"description": "El elemento HTML <dialog> representa una caja de diálogo u otro componente interactivo, como inspector o ventana. Cuando se envía un formulario, el diálogo se cierra con un atributo returnValue asignado con el value del botón utilizado.",
+		"description": "El elemento HTML <dialog> representa una caja de diálogo u otro componente interactivo, como inspector o ventana.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<dialog open>\n¡Hola a todos!\n</dialog>\n"
 		},
@@ -352,6 +344,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/details",
 		"description": "El elemento <details> es usado como un widget de colapsado a través del cual el usuario puede obtener información adicional.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<details>\n  <summary>Detalles</summary>\n  <p>Más info sobre los detalles.</p>\n</details>\n"
 		},
@@ -362,6 +355,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/progress",
 		"description": "La etiqueta HTML <progress> se utiliza para visualizar el progreso de una tarea. Aunque los detalles de cómo se muestran depende directamente del navegador que se utiliza, aparece una barra de progreso.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<progress value=\"70\" max=\"100\">70 %</progress>\n"
 		},
@@ -372,6 +366,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/select",
 		"description": "El elemento select (<select>) de HTML representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos <option>.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<select name=\"color\">\n<option value=\"rosa\">Rosa</option>\n<option value=\"rojo\">Rojo</option>\n<option value=\"verde\">Verde</option>\n<option value=\"amarillo\">Amarillo</option>\n<option value=\"azul\">Azul</option>\n</select>"
 		},
@@ -382,6 +377,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/textarea",
 		"description": "El elemento textarea representa un campo para la entrada de texto multilínea.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<textarea name=\"textarea\" rows=\"3\" cols=\"20\">Escribir algo aquí</textarea>"
 		},
@@ -390,10 +386,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/option",
-		"description": "En un formulario, el elemento HTML <option> se usa para representar un item dentro de un <select>, un  <optgroup> o un elemento <datalist>.",
+		"description": "En un formulario, el elemento HTML <option> se usa para representar un ítem dentro de un <select>, un  <optgroup> o un elemento <datalist>.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<select>\n <option value=\"argentina\">Argentina</option>\n </select>"
+			"code": "<select>\n <option value=\"argentina\">Argentina</option>\n <option value=\"Australia\">Australia</option>\n</select>"
 		},
 		"language": "html",
 		"name": "<code>&lt;option&gt;</code>"
@@ -402,8 +399,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/legend",
 		"description": "El elemento <legend> (leyenda) crea un título para un contenido.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<form><fieldset>\n<legend>Información Personal</legend>\nNombre: <input name='nombre' type='text'>\n  Apellidos: <input name='apellidos' type='text'>\n </fieldset></form>"
+			"code": "<form>\n<legend>Información Personal</legend>\nNombre: <input name='nombre' type='text'>\nApellido: <input name='apellidos' type='text'>\n</form>"
 		},
 		"language": "html",
 		"name": "<code>&lt;legend&gt;</code>"
@@ -412,8 +410,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/form",
 		"description": "El elemento HTML form (<form>) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<form action=\"/signup\" method=\"post\">\n<label>Nombre</label><br>\n <input type=\"text\" name=\"nombre\">\n <label>Apellido</label><br>\n<input type=\"text\" name=\"apellido\">\n <label>Email</label><br>\n <input type=\"email\" name=\"email\" required>\n </form>\n"
+			"code": "<form>\n<label>Nombre</label><br>\n <input type=\"text\" name=\"nombre\">\n <label>Apellido</label><br>\n<input type=\"text\" name=\"apellido\">\n <label>Email</label><br>\n <input type=\"email\" name=\"email\">\n </form>\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;form&gt;</code>"
@@ -422,6 +421,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/label",
 		"description": "El Elemento HTML <label> representa una etiqueta para un elemento.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "<label for=\"nombre\">Nombre:</label>\n<input type=\"text\" id=\"nombre\">"
 		},
@@ -430,8 +430,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/datalist",
-		"description": "Define una lista de opciones autocompletadas cuando se usa un <input>.",
+		"description": "Define una lista de opciones autocompletadas dentro de un <input>.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "<label>Colores</label><br>\n<input list=\"colores\" placeholder=\"Escribe un color\">\n<datalist id=\"colores\">\n<option value=\"Rojo\">\n<option value=\"Azul\">\n<option value=\"Verde\">\n</datalist>"
 		},
@@ -442,8 +443,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/fieldset",
 		"description": "El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<form>\n\n <fieldset>\n  <legend>Información Personal</legend>\n  Nombre: <input name='nombre' type='text' tabindex='1'>\n  Apellidos: <input name='apellidos' type='text' tabindex='2'>\n </fieldset>\n\n <fieldset>\n  <legend>edad</legend>\n  <input type='checkbox' tabindex='20'\n            name='edad' value='20-39' > 20-39\n  <input type='checkbox' tabindex='21'\n            name='edad' value='40-59' > 40-59\n  <input type='checkbox' tabindex='22'\n            name='edad' value='60-79' > 60-79\n </fieldset>\n\n</form>\n"
+			"code": "<form>\n<fieldset>\nNombre: <input name='nombre' type='text' tabindex='1'>\nApellidos: <input name='apellidos' type='text' tabindex='2'>\n </fieldset>\n <fieldset>\n Edad: <input type='checkbox' tabindex='20' name='edad' value='20-39'> 20-39\n  <input type='checkbox' tabindex='21'name='edad' value='40-59' > 40-59\n  <input type='checkbox' tabindex='22' name='edad' value='60-79' > 60-79\n </fieldset>\n</form>"
 		},
 		"language": "html",
 		"name": "<code>&lt;fieldset&gt;</code>"
@@ -452,6 +454,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/button",
 		"description": "Define un botón oprimible.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "<button>\nEnviar\n </button>"
 		},
@@ -462,6 +465,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/col",
 		"description": "Permite especificar propiedades para una columna o un grupo de ellas en una tabla.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<table style=\"width:100%\">\n<colgroup>\n<col style=\"background-color: hotpink;\">\n<col span=\"2\" style=\"background-color: springgreen;\">\n</colgroup>\n<tr>\n<td>John Lennon</td>\n<td>Guitarra</td>\n<td>1960–1969</td>\n</tr>\n</table>"
 		},
@@ -472,6 +476,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/colgroup",
 		"description": "Define un grupo de columnas en una tabla.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<table style=\"width:100%\">\n<colgroup>\n<col style=\"background-color: hotpink;\">\n<col span=\"2\" style=\"background-color: springgreen;\">\n</colgroup>\n<tr>\n<td>Pedro</td>\n<td>Estudiante</td>\n<td>Ingeniería Industrial</td>\n</tr>\n</table>"
 		},
@@ -482,6 +487,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/tr",
 		"description": "El elemento HTML fila de tabla (table row) <tr> define una fila en una tabla.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<table style=\"width:100%\">\n<tr>\n<td>Color</td>\n<td>Animal</td>\n</tr>\n<tr>\n<td>País</td>\n<td>Película</td>\n</tr>\n</table>"
 		},
@@ -492,6 +498,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input",
 		"description": "El elemento <input> especifica un campo de entrada donde el usuario puede ingresar datos.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Nombre: <input type=\"text\" value=\"María Elena\"><br>\nApellido: <input type=\"text\" value=\"Walsh\">"
 		},
@@ -502,16 +509,18 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/th",
 		"description": "El elemento HTML <th> define la cabecera de una columna en una tabla. Debe ser un hijo directo de un <tr>.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<table style=\"width:100%\">\n<thead>\n<tr>\n<th colspan=\"4\">Ganadores de la copa mundial</th>\n</tr>\n<tr>\n<td colspan=\"2\">Ubicación</td>\n<td colspan=\"2\">Puntaje</td>\n</tr>\n<tr>\n<td>Continente</td>\n<td>País</td>\n<td>Primera</td>\n<td>Total</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Argentina</td>\n<td>1978</td>\n<td>2</td>\n<td>4</td>\n </tr>\n</tbody>\n</table>"
+			"code": "<table style=\"width:100%\">\n<thead>\n<tr>\n<th colspan=\"4\">Ganadores de la copa mundial</th>\n</tr>\n<tr>\n<td>Continente</td>\n<td>País</td>\n<td>Primera</td>\n<td>Total</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Argentina</td>\n<td>1978</td>\n<td>2</td>\n<td>4</td>\n </tr>\n</tbody>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;th&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/noscript",
-		"description": "noscript de -no script. Aporta contenidos alternativos al elemento script para los usuarios que deshabilitaron los scripts en sus exploradores o no tienen un explorador apto para ellos.",
+		"description": "<noscript> de \"no script\" aporta contenidos alternativos al elemento script para los usuarios que deshabilitaron los scripts en sus exploradores o no tienen un explorador apto para ellos.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<script>document.write(\"Hola mundo!\")</script>\n<noscript>Tu explorador no soporta JavaScript</noscript>"
 		},
@@ -520,8 +529,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/td",
-		"description": "El elemento (<td>) define la celda de una tabla que contiene datos. Debe ser un hijo directo de un <tr>",
+		"description": "El elemento (<td>) define la celda de una tabla que contiene datos. Debe ser un hijo directo de un <tr>.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<table width=\"100%\"><tr>\n<td>Nombre</td>\n<td>Apellido</td>\n<td>Edad</td>\n</tr></table>"
 		},
@@ -532,6 +542,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/script",
 		"description": "El elemento <script> se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML o XHTML.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<script>\ndocument.getElementById(\"demo\").innerHTML = \"Hola JavaScript!\";\n</script>"
 		},
@@ -540,18 +551,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/del",
-		"description": "Define texto que fue eliminado.",
+		"description": "Define texto que fue eliminado de un documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "Para escribir abreviaturas, usa <del cite=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym\">acronym</del> <ins>abbr</ins>."
+			"code": "Mi color preferido es el <del>azul</del> <ins>rojo</ins>"
 		},
 		"language": "html",
 		"name": "<code>&lt;del&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/table",
-		"description": "El Elemento de Tabla HTML (<table>) representa datos en dos o mas dimensiones.",
+		"description": "El Elemento de Tabla HTML (<table>) representa datos en dos o más dimensiones.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<table style=\"width:100%\"><tr>\n<td>John Lennon</td>\n<td>Guitarra</td>\n</tr>\n<tr>\n<td>Paul McCartney</td>\n<td>Bajo</td>\n</tr></table>"
 		},
@@ -560,10 +573,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/caption",
-		"description": "Es el encargado de darle un título descríptivo a las tablas.",
+		"description": "Es el encargado de darle un título descriptivo a las tablas.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<table style=\"width:100%\">\n<caption>Gastos del mes</caption>\n<tr>\n<th>Mes</th>\n<th>Gastos</th>\n</tr><tr>\n<td>Enero</td>\n<td>$100</td>\n</tr>\n<tr>\n<td>Febrero</td>\n<td>$50</td>\n</tr>\n</table>"
+			"code": "<table style=\"width:100%\">\n<caption>Gastos del mes</caption>\n<tr>\n<td>Enero</td>\n<td>$100</td>\n</tr>\n<tr>\n<td>Febrero</td>\n<td>$50</td>\n</tr>\n</table>"
 		},
 		"language": "html",
 		"name": "<code>&lt;caption&gt;</code>"
@@ -572,6 +586,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/source",
 		"description": "Define la fuente de un elemento <audio>, <video>, o <picture>.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<video width=\"320\" height=\"240\">\n<source src=\"/videos/mov_bbb.mp4\" type=\"video/mp4\">\nTu navegador no soporta HTML5 video.\n</video>",
 		},
@@ -580,10 +595,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ins",
-		"description": "Define texto que fue insertado.",
+		"description": "Define texto que fue insertado en un documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<p>\nEl agua es insipida, <ins>inodora e incolora.</ins>"
+			"code": "<p>\nEl agua es insipida<ins>, inodora e incolora</ins>."
 		},
 		"language": "html",
 		"name": "<code>&lt;ins&gt;</code>"
@@ -592,6 +608,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/embed",
 		"description": "Define un contenedor para aplicación externa.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<embed src=\"/videos/mov_bbb.mp4\" width=\"320\" height=\"240\">"
 		},
@@ -600,8 +617,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/param",
-		"description": "param de \"parameter\" = parámetro. Permite especificar parámetros de ejecución para un objeto.",
+		"description": "<param> de \"parameter\", o sea parámetro, permite especificar parámetros de ejecución para un objeto.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<object data=\"/videos/mov_bbb.mp4\">\n<param name=\"autoplay\" value=\"true\">\n</object>"
 		},
@@ -612,6 +630,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/canvas",
 		"description": "Define un elemento donde se pueden dibujar gráficos.",
 		"example": {
+			"show": "no",
 			"image": "",
 			"code": "<canvas>Canvas no es soportado en su explorador</canvas>"
 		},
@@ -622,8 +641,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/area",
 		"description": "Define un área interactivo dentro de un mapa.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#world-continents\">\n<map name=\"world-continents\">\n<area title=\"South America\" href=\"https://es.wikipedia.org/wiki/Am%C3%A9rica_del_Sur\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
+			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#continentes\">\n<map name=\"continentes\">\n<area title=\"América del Sur\" href=\"https://es.wikipedia.org/wiki/Am%C3%A9rica_del_Sur\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
 		},
 		"language": "html",
 		"name": "<code>&lt;area&gt;</code>"
@@ -632,8 +652,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/map",
 		"description": "Define un mapa interactivo sobre una imagen.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#world-continents\">\n<map name=\"world-continents\">\n<area title=\"South America\" href=\"https://en.wikipedia.org/wiki/South_America\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
+			"code": "<img src=\"http://htmlreference.io/images/world-continents.png\" width=\"320\" height=\"160\" orgwidth=\"320\" orgheight=\"160\" usemap=\"#continentes\">\n<map name=\"continentes\">\n<area title=\"América del Sur\" href=\"https://es.wikipedia.org/wiki/Am%C3%A9rica_del_Sur\" shape=\"poly\" coords=\"48,88,61,74,119,99,95,160,66,159\">\n</map>"
 		},
 		"language": "html",
 		"name": "<code>&lt;map&gt;</code>"
@@ -642,6 +663,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img",
 		"description": "Define una imagen insertada en la página web.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<img src=\"http://htmlreference.io/images/sunset.jpg\" alt=\"Imagen de una puesta de sol en Ha Long Bay\">"
 		},
@@ -652,8 +674,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio",
 		"description": "El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<audio src=\"/videos/audio.ogg\" autoplay>\nTu explorador no tiene soporte para <audio>.\n</audio>"
+			"code": "Reproduciendo audio<audio src=\"/videos/audio.ogg\" autoplay>\nTu explorador no tiene soporte para <audio>.\n</audio>"
 		},
 		"language": "html",
 		"name": "<code>&lt;audio&gt;</code>"
@@ -662,6 +685,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/var",
 		"description": "Define una variable de forma matemática.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "El valor de <var>x</var> es 12."
 		},
@@ -672,18 +696,20 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/wbr",
 		"description": "El elemento HTML word break opportunity <wbr> indica en qué partes del texto sería correcto agregar un salto de línea.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "este<wbr> es un <wbr> ejemplo."
+			"code": "este es un <wbr> ejemplo laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargo."
 		},
 		"language": "html",
 		"name": "<code>&lt;wbr&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/sub",
-		"description": "El elemento HTML <sub> define un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo, y generalmente más pequeño, que el tramo principal del texto, es decir, en subíndice.",
+		"description": "El elemento HTML <sub> define un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo y generalmente más pequeño que el tramo principal del texto, es decir, en subíndice.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<p>La fórmula química de agua: H<sub>2</sub>O</p>\n"
+			"code": "<p>La fórmula química del agua es H<sub>2</sub>O</p>\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;sub&gt;</code>"
@@ -692,6 +718,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/u",
 		"description": "Subraya un texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "\nTexto normal y... <u>Texto subrayado</u>\n"
 		},
@@ -700,8 +727,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/sup",
-		"description": "El elemento HTML <sup> define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto, y generalmente más pequeño, que el tramo principal del texto, es decir, en superíndice.",
+		"description": "El elemento HTML <sup> define un fragmento de texto que se debe mostrar, por razones tipográficas, más alto y generalmente más pequeño que el tramo principal del texto, es decir, en superíndice.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "La \"potencia de 2\" es 2<sup>n</sup> donde n es un entero."
 		},
@@ -712,6 +740,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/time",
 		"description": "Define una fecha en un reloj de 24h.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "El juego empieza a las <time datetime=\"2017-04-29T19:00\">19:00</time>."
 		},
@@ -720,10 +749,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/strong",
-		"description": "Define gran importancia de un texto.",
+		"description": "Define importancia de un texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<p>HTML debería ser usado únicamente para escribir <strong>contenido</strong>, y dejar CSS para <strong>estilado</strong></p>."
+			"code": "<p style=\"font-family:verdana;\">HTML debe ser usado para <strong>contenido</strong>, y CSS para <strong>estilado</strong></p>."
 		},
 		"language": "html",
 		"name": "<code>&lt;strong&gt;</code>"
@@ -732,6 +762,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video",
 		"description": "Permite embeber un video en una página web.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"/videos/mov_bbb.mp4\" type=\"video/mp4\">\n  Tu navegador no soporta HTML5 video.\n</video>\n"
 		},
@@ -740,8 +771,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/small",
-		"description": "Aplica el tamaño mínimo de la fuente de texto del navegador.",
+		"description": "Aplica el tamaño mínimo de la fuente de texto del navegador al texto que contiene.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Texto importante.\n<small>Publicado el <time datetime=\"2017-04-29T19:00\">29 de abril</time>"
 		},
@@ -750,10 +782,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/span",
-		"description": "span - abarcar. Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.",
+		"description": "<span> -abarcar es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<div style=\"border: 1px dotted blue;\">\n<h4>Ejemplo de div y span </h4>\n<p>\nEsto es un párrafo dentro de un div,\n<span style=\"color: red;\"> y esto un span dentro de un párrafo.</span>\n</p>\n </div>\n"
+			"code": "<div>Este es un div con un <span style=\"color: red;\">span</span></div>"
 		},
 		"language": "html",
 		"name": "<code>&lt;span&gt;</code>"
@@ -762,8 +795,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/samp",
 		"description": "Define la salida de un programa.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<p>Escribí <code>git push</code> y la consola imprimió <samp>Everything up-to-date</samp>.</p>"
+			"code": "<p style=\"font-family:verdana;\">La consola imprimió <samp>Everything up-to-date</samp>.</p>"
 		},
 		"language": "html",
 		"name": "<code>&lt;samp&gt;</code>"
@@ -772,8 +806,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/mark",
 		"description": "Define texto resaltado.",
 		"example": {
+		"show": "yes",
 			"image": "",
-			"code": "Usamos HTML5 para escribir <mark>contenido</mark> en la web."
+			"code": "Usamos HTML para escribir <mark>contenido</mark> en la web."
 		},
 		"language": "html",
 		"name": "<code>&lt;mark&gt;</code>"
@@ -782,6 +817,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/kbd",
 		"description": "La etiqueta <kbd> permite especificar un formato de texto para distinguir lo que el usuario tendría que teclear en la solicitud de un programa.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "Si está conforme escriba <kbd>sí</kbd>. Si no, pulse <kbd>esc</kbd>."
 		},
@@ -792,6 +828,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/q",
 		"description": "Define una cita corta.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Miró a su alrededor y dijo <q cite=\"https://en.wikiquote.org/wiki/The_Terminator\">Volveré</q>."
 		},
@@ -802,6 +839,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/s",
 		"description": "Define texto tachado.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Alex tiene <s>37</s> 38 años."
 		},
@@ -812,8 +850,9 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/code",
 		"description": "Define un fragmento de código dentro de un bloque de texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<p>Para crear un nuevo arreglo, escribir: <code>var arreglo = new Array(3)</code></p>"
+			"code": "<p style=\"font-family:verdana;\">Para crear un nuevo arreglo, escribir: <code>var arreglo = new Array(3)</code></p>"
 		},
 		"language": "html",
 		"name": "<code>&lt;code&gt;</code>"
@@ -822,6 +861,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/i",
 		"description": "Pone un elemento en itálica.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Texto normal y... <i>Texto inclinado</i>"
 		},
@@ -830,8 +870,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/em",
-		"description": "Define énfasis en el texto. Usualmente se renderiza como texto en itálica.",
+		"description": "Define énfasis en el texto. Usualmente se representa como texto en itálica.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<em>Aprender</em> es importante."
 		},
@@ -842,6 +883,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dfn",
 		"description": "El elemento <dfn> representa un término que se supone es definido o descripto en el párrafo.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<dfn>HTML</dfn> es un lenguaje de marcado para hipertextos."
 		},
@@ -850,8 +892,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/cite",
-		"description": "cite -cita. Marca una referencia a una fuente o el autor de un texto citado.",
+		"description": "<cite> (cita) marca una referencia a una fuente o el autor de un texto citado.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<cite>Galileo</cite> dijo: \"... y sin embargo, se mueve.\""
 		},
@@ -862,6 +905,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/br",
 		"description": "El elemento HTML line break <br> produce un salto de línea en el texto. Es útil para escribir un poema o una dirección, donde la división de las líneas es importante.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "Acámica<br>\nEl Salvador 4052<br>\n1175, CABA<br>\nArgentina"
 		},
@@ -870,18 +914,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/data",
-		"description": "Vincula un contenido dado con una traducción legible por la máquina. Si el contenido es el tiempo o con fechas relacionadas, el <time> debe ser utilizado.",
+		"description": "Vincula un contenido dado con una traducción legible por la máquina.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<ul>\n<li><data value=\"3967381398\">Ketchup Mini</data></li>\n <li><data value=\"3967381399\">Ketchup Jumbo</data></li>\n</ul>"
+			"code": "<ul>\n<li><data value=\"3967381398\">Ketchup Chico</data></li>\n <li><data value=\"3967381399\">Ketchup Grande</data></li>\n</ul>"
 		},
 		"language": "html",
 		"name": "<code>&lt;data&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ul",
-		"description": "ul de \"unordered list\" -lista no ordenada. Crea una lista no ordenada.",
+		"description": "<ul> de \"unordered list\" -lista no ordenada crea una lista no ordenada.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<ul>\n <li>Esto</li>\n <li>Lo otro</li>\n <li>Lo de más allá</li>\n</ul>\n"
 		},
@@ -890,8 +936,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/b",
-		"description": "b de bold=negrita.",
+		"description": "<b> de \"bold\" -negrita.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Texto normal y... <b>Texto en negrita</b>"
 		},
@@ -900,8 +947,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/abbr",
-		"description": "El elemento HTML <abbr> (o Elemento de Abreviación HTML) representa una abreviación y opcionalmente proporciona la descripción completa para ella. Si está presente, el atributo title debe contener la descripción completa y nada más.",
+		"description": "El elemento HTML <abbr> (o Elemento de Abreviación HTML) representa una abreviación y opcionalmente proporciona la descripción completa para ella. El atributo title, si está presente, debe contener la descripción completa.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "Yo programo en <abbr title=\"Hypertext Markup Language\">HTML</abbr>"
 		},
@@ -912,6 +960,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a",
 		"description": "El Elemento HTML Anchor <a> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<a href=\"https://www.acamica.com/\">Acámica</a>"
 		},
@@ -922,6 +971,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/p",
 		"description": "Define un simple párrafo de texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<p>Esto es un párrafo</p>"
 		},
@@ -930,8 +980,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/bdo",
-		"description": "Bi-Directional Overriding, significa Anulación de bidireccionalidad.",
+		"description": "<bdo> de \"Bi-Directional Overriding\", significa anulación de bidireccionalidad en la dirección del texto.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "La palabra <bdo dir=\"rtl\">Hola</bdo> es \"Hola\" escrita de atrás para adelante."
 		},
@@ -940,10 +991,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main",
-		"description": "Define el contenido principal de la página web. Puede ser mostrado con una barra lateral.",
+		"description": "Define el contenido principal de la página web.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<main>\n<h1>Mi blog</h1>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>\n<p>etc.</p>\n</main>\n<aside>\n<h3>Sobre el autor</h3>\n<p>Desarrollador de Software.</p>\n</aside>"
+			"code": "<main>\n<h3>Mi blog</h3>\nBienvenidos a mi blog.\n</main>\n<aside>\n<h4>Sobre el autor</h4>\nDesarrollador de Software.\n</aside>"
 		},
 		"language": "html",
 		"name": "<code>&lt;main&gt;</code>"
@@ -952,6 +1004,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/figure",
 		"description": "Define un elemento autocontenido, usualmente una imagen.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<figure>\n<img src=\"/images/acamica.png\" alt=\"Logo de Acámica\">\n</figure>"
 		},
@@ -960,10 +1013,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/pre",
-		"description": "El elemento pre representa un bloque de texto preformateado donde, en contraste con otros elementos, los espacios continuos y los quiebres de línea son respetados.",
+		"description": "El elemento pre representa un bloque de texto preformateado donde, en contraste con otros elementos, los espacios continuos y los saltos de línea son respetados.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "Las cosas que necesitarás están listadas aquí:\n- Una linterna.\n- Una caja de fósforos.\n- Un cuchillo afilado.\n<pre>Las cosas que necesitarás están listadas aquí:\n- Una linterna.\n- Una caja de fósforos.\n- Un cuchillo afilado.\n</pre>"
+			"code": "Las cosas que necesitarás son: - Una linterna - Una caja de fósforos - Una carpa \n <pre>Las cosas que necesitarás son:\n- Una linterna\n- Una caja de fósforos\n- Una carpa\n</pre>"
 		},
 		"language": "html",
 		"name": "<code>&lt;pre&gt;</code>"
@@ -972,16 +1026,18 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/ol",
 		"description": "Define una lista ordenada.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<ol>\n <li>punto uno</li>\n <li>punto dos</li>\n <li>punto tres</li>\n</ol>\n"
+			"code": "<ol>\n <li>Punto uno</li>\n <li>Punto dos</li>\n <li>Punto tres</li>\n</ol>\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;ol&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/bdi",
-		"description": "Permite mostrar parte del texto en la dirección opuesta.",
+		"description": "Aísla una parte del texto que puede ser formateada en la dirección opuesta al resto del documento.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "La palabra <bdi>مرحبا</bdi> significa \"Hola\" en Arábico"
 		},
@@ -990,8 +1046,9 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/figcaption",
-		"description": "El elemento HTML <figcaption> representa un subtítulo o leyenda asociada al contenido de un elemento <figure>, pudiendo ser colocado como el primero o último hijo del elemento <figure>. Es opcional.",
+		"description": "El elemento HTML <figcaption> representa un subtítulo o leyenda asociada al contenido de un elemento <figure>, pudiendo ser colocado como el primero o el último hijo del elemento <figure>.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<figure>\n<img src=\"/images/acamica.png\" alt=\"Acámica\">\n<figcaption>El logo de Acámica</figcaption>\n</figure>"
 		},
@@ -1000,10 +1057,11 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/li",
-		"description": "Define una lista de items dentro de una lista ordenada <ol> o desordenada <ul>.",
+		"description": "Define una lista de ítems dentro de una lista ordenada <ol> o desordenada <ul>.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<ul>\n<li>punto uno</li>\n<li>punto dos</li>\n<li>punto tres</li>\n</ul>\n"
+			"code": "<ul>\n<li>Paso uno</li>\n<li>Paso dos</li>\n<li>Paso tres</li>\n</ul>\n"
 		},
 		"language": "html",
 		"name": "<code>&lt;li&gt;</code>"
@@ -1012,6 +1070,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dt",
 		"description": "El elemento <dt> representa a un nombre en una lista de descripciones (dl).",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<dl>\n<dt>Hornear</dt>\n<dd>Cocinar con calor seco, habitualmente en el horno.</dd>\n<dt>Hervir</dt>\n<dd>Calentar un líquido hasta que las burbujas rompan contínuamente en la superficie.</dd>\n</dl>"
 		},
@@ -1020,18 +1079,20 @@ db = [{
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/div",
-		"description": "div de \"division\" -división. Sirve para crear secciones o agrupar contenidos.",
+		"description": "<div> de \"division\" -división sirve para crear secciones o agrupar contenidos.",
 		"example": {
+			"show": "yes",
 			"image": "",
-			"code": "<div style=\"color: blue;\">\nEsto es un párrafo dentro de un div.\n</div>"
+			"code": "<div style=\"color: blue;\">\nEsto es un div.\n</div>"
 		},
 		"language": "html",
 		"name": "<code>&lt;div&gt;</code>"
 	},
 	{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/hr",
-		"description": "El elemento HTML <hr> representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). Si bien se presenta como una línea horizontal, es definida en términos semánticos y no tanto en términos representativos.",
+		"description": "El elemento HTML <hr> representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia o un cambio de tema en una sección). Si bien se presenta como una línea horizontal, es definida en términos semánticos y no tanto en términos representativos.",
 		"example": {
+		"show": "yes",
 			"image": "",
 			"code": "Este es el primer párrafo\n<hr>\nEste es el segundo párrafo, separado del primero por una línea horizontal.\n"
 		},
@@ -1042,6 +1103,7 @@ db = [{
 		"reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/dl",
 		"description": "Define una lista de definiciones.",
 		"example": {
+			"show": "yes",
 			"image": "",
 			"code": "<dl>\nHTML</dt>\n<dd>Un lenguaje de marcado para crear páginas web.</dd>\n<dt>CSS</dt>\n<dd>Una tecnología para que el HTML tenga mejor apariencia.</dd>\n</dl>"
 		},

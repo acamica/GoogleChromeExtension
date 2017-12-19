@@ -9,7 +9,10 @@ window.onload = function() {
         textarea.innerHTML = db[rand].description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
     if(db[rand]['example'].code != null){
-        exa.innerHTML = "<p>" + db[rand].example.code.replace(/</g, "&lt;") + "</p><pre id=code>"+ db[rand].example.code + "</pre>";
+        exa.innerHTML = "<p>" + db[rand].example.code.replace(/</g, "&lt;") + "</p>"
+        if (db[rand].example.show === "yes"){
+            exa.innerHTML+="<pre id=code>"+ db[rand].example.code + "</pre>";
+        }
     }
 
 	//primera vez que se abre
