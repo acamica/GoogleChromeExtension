@@ -19,7 +19,7 @@ The extension was made for ```Google Chrome``` so please install it before you t
 
 ### Installing
 
-Open Google Chrome, go to chrome://extensions (or find it in your menu in ```more tools``` > ```extensions```), then activate the developer mode on the top right of the page and click on ```Load unpacked extension...``` and select the extension's folder. 
+Open Google Chrome, go to chrome://extensions (or find it in your menu in ```More tools``` > ```Extensions```), then activate the developer mode on the top right of the page and click on ```Load unpacked extension...``` and select the extension's folder. 
 
 ## Usage
 Just open a new tab and enjoy.
