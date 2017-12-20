@@ -128,6 +128,7 @@ p.visual-quote {
     top: 80vh;
     border-top: none;
     overflow: hidden;
+    text-align: center;
 }
 
 .row.status-area > div {
@@ -136,53 +137,6 @@ p.visual-quote {
     width: calc(100% - 14vw);
     float: left;
     position: relative;
-}
-
-.row.status-area img {
-    height: 75px;
-    width: auto;
-    margin-top: calc((20vh - 75px) / 2);
-    display: inline-block;
-    float: left;
-}
-
-.row.status-area #about {
-    display: inline-block;
-    width: calc(100% - 120px);
-    position: absolute;
-    right: 0;
-    margin-top: 4vh;
-}
-
-.row.status-area #about p {
-    font-size: 11px;
-}
-
-.row.status-area #about p.end-note {
-    display: inline-block;
-    margin: 0;
-    padding: 8px 10px;
-	padding-right: 12px;
-    background: rgba(52, 152, 219,0.05);
-}
-
-.row.status-area #about p.end-note i {
-    margin-right: 5px;
-}
-
-.row.status-area #about p.end-note:nth-child(3) {
-    background-color: rgba(142, 68, 173,0.05);
-    margin-left: 10px;
-}
-
-.row.status-area #about p.end-note:nth-child(3) img {
-	width: 20px;
-	height: auto;
-	display: inline-block;
-	margin-top: 0;
-	margin-right: 7px;
-    margin-left: 2px;
-	float: unset;
 }
 
 .row.snippet-area {

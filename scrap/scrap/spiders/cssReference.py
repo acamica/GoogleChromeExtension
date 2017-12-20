@@ -7,30 +7,23 @@ class QuotesSpider(scrapy.Spider):
     name = "propiedad"
 
     def start_requests(self):
-        yield scrapy.Request(url='http://cssreference.io/property/', callback=self.parse)
+        for elem in properties:
+            yield scrapy.Request(url='http://cssreference.io/property/' + elem, callback=self.parse)
 
     def parse(self, response):
-        td = response.xpath('//span')
-        # # Every element is inside an 'a' tag
-        for elem in response.xpath('.//a[contains(@href, "/es/docs/Web/HTML/Elemento/")]'):
-            # Construction of the elements, they contain a reference, a description, a name and an example
-            element = {
-                'name': elem.xpath('./node()').extract_first(),
-                'reference': 'https://developer.mozilla.org' + elem.css('a').xpath('@href').extract_first(),
-                'description': elem.css('a').xpath('@title').extract_first(),
-                'language': 'html',
+        name = response.css('h2').css('a::text').extract_first()
+        code = response.xpath('//div[contains(@class, "example-output-div")]').extract_first()
+        style = response.xpath('//section[@class= "example"]/style').extract_first()
+        element = {
+            'name': name,
+            'reference': 'https://cssreference.io/property/' + name,
+            'description': response.xpath('//div[@class= "property-description"]').xpath("string(.//p)").extract_first(),
+            'language': 'css',
+            'example': {
+                'show': 'yes',
+                'image': response.xpath('//code[@class= "example-value"]/@data-clipboard-text').extract_first(),
+                'code': code + style,
             }
-            # New request to get the example of every element
-            exReq = scrapy.Request(url=element['reference'], callback=self.example)
-            exReq.meta['element'] = element
-            yield exReq
-
-    # Example request
-    def example(self, response):
-        element = response.meta['element']
-        newExample = {
-            'image': ''
         }
-        newExample['code'] = response.xpath('//pre/node()').extract_first();
-        element['example'] = newExample
-        return element
+
+        yield element
