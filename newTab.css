@@ -277,14 +277,14 @@ p.visual-quote {
     transition: all 0.3s;
 }
 
-#about p {
+/*#about p {
     font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 }
 
 #about p:first-child {
     margin-bottom: 10px;
-}
+}*/
 
 
 #stumble-statement {

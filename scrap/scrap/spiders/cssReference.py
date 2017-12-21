@@ -13,7 +13,12 @@ class QuotesSpider(scrapy.Spider):
     def parse(self, response):
         name = response.css('h2').css('a::text').extract_first()
         code = response.xpath('//div[contains(@class, "example-output-div")]').extract_first()
-        style = response.xpath('//section[@class= "example"]/style').extract_first()
+        generalStyle = "".join(response.xpath('//section[contains(@class, "property")]/style').extract())
+        if generalStyle is None:
+            example = code
+        else:
+            example = generalStyle + code
+        style = response.xpath('//section[@class= example]/style').extract()
         element = {
             'name': name,
             'reference': 'https://cssreference.io/property/' + name,
@@ -22,7 +27,7 @@ class QuotesSpider(scrapy.Spider):
             'example': {
                 'show': 'yes',
                 'image': response.xpath('//code[@class= "example-value"]/@data-clipboard-text').extract_first(),
-                'code': code + style,
+                'code': generalStyle + code,
             }
         }
 
