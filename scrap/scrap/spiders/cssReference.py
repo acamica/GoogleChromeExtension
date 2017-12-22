@@ -26,7 +26,8 @@ class QuotesSpider(scrapy.Spider):
             'language': 'css',
             'example': {
                 'show': 'yes',
-                'image': response.xpath('//code[@class= "example-value"]/@data-clipboard-text').extract_first(),
+                'title': response.xpath('//code[@class= "example-value"]/@data-clipboard-text').extract_first(),
+                'description': response.xpath('//div[@class= "example-description"]').xpath("string(.//p)").extract_first(),
                 'code': generalStyle + code,
             }
         }

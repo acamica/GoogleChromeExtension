@@ -1,8 +1,11 @@
 var rand = Math.floor(Math.random() * db.length);
 
 window.onload = function() {
+    // element description
     var textarea = document.getElementById('description');
+    // element name
     var name = document.getElementById('name');
+    //element example
     var exa = document.getElementById('example');
 
     name.innerHTML = db[rand].name;
@@ -10,11 +13,14 @@ window.onload = function() {
         textarea.innerHTML = db[rand].description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
     if(db[rand]['example'].code != null){
-        if(db[rand].example.image !== ""){
-            exa.innerHTML+= "<h4 id=example-name>" + db[rand].example.image + "</h4>"
+        if(db[rand].example.title !== ""){
+            exa.innerHTML+= "<h4 id=example-title>" + db[rand].example.title + "</h4>"
         }
         else{
             exa.innerHTML += "<p>" + db[rand].example.code.replace(/</g, "&lt;") + "</p>"
+        }
+        if(db[rand].example.description !== ""){
+            exa.innerHTML+= "<p id=example-description>" + db[rand].example.description + "</p>"
         }
         
         if (db[rand].example.show === "yes"){

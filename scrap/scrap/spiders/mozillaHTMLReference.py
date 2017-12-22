@@ -27,7 +27,7 @@ class QuotesSpider(scrapy.Spider):
     def example(self, response):
         element = response.meta['element']
         newExample = {
-            'image': ''
+            'title': ''
         }
         newExample['code'] = response.xpath('//pre/node()').extract_first();
         element['example'] = newExample
