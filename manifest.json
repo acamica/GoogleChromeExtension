@@ -7,18 +7,18 @@
       "newtab": "newTab.html"
    },
    "content_security_policy": "script-src 'self' https://github.com/acamica; object-src 'self'",
-   "description": "Descubrí una nueva propiedad CSS o un nuevo tag HTML cada vez que abrís una nueva pestaña.",
+   "description": "Descubrí una nueva propiedad CSS o un nuevo tag HTML cada vez que abrís una pestaña.",
    "icons": {
       "128": "images/logo128.png"
    },
    "manifest_version": 2,
-   "name": "Acámica",
+   "name": "LearnTab",
    "permissions": [ "storage" ],
    "background":
     {
         "scripts": ["ext/jquery-3.2.1.min.js"]
     },
-   "short_name": "Acámica",
+   "short_name": "LearnTab",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0"
 }
