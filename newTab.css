@@ -19,90 +19,121 @@ h1 {
     font-family: monospace;
 }
 
-.code-container {
-  background-color: #222831;
-  padding:20px;
-  color:#eee;
-  max-height:200px;
-  font-size:14px;
-  overflow:scroll;
-}
-
 .main-container {
   width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.two-columns > section {
+  flex: 1 1 40%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.two-columns > aside {
+  flex: 1 1 60%;
+}
+
+h1.name {
+  font-family: Menlo, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px;
 }
 
 .description {
-  color: #000000;
-  margin-bottom: 0;
-  margin-top: 25px;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-.flex {
+.example {
   display: flex;
-  justify-content: space-between;
+  max-height: 400px;
+  max-width: 480px;
+  box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.21);
+  flex-direction: column;
 }
 
-.flex > div {
-  width: 48%;
-}
-
-.border-top {
-  border-top: 5px solid black;
-}
-
-.box {
-  background-color: #f5f5f5;
-}
-
-.separator {
-  padding: 40px;
-}
-
-.separator-small {
-  padding: 20px;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.margin-0 {
+.example .code {
+  display: block;
+  background-color: #222831;
+  padding:20px;
+  color: #fafafa;
+  max-height: 200px;
+  font-size: 15px;
+  overflow: scroll;
+  white-space: pre-wrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  position: relative;
+  max-width: 100%;
+  flex-grow: 1;
 }
 
-.display-block {
+.example .preview {
+  background-color: #fff;
+  max-height: 200px;
+  overflow: scroll;
+  max-width: 100%;
+  position: relative;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.example .preview img {
+  max-width: 100%;
+}
+
+.info-link {
+  color: #333;
+  font-size: 14px;
+}
+
+.property-description {
+  display: none;
+}
+
+.main-container.css-property .property-description {
   display: block;
 }
 
-.right {
-  text-align: right;
+.main-container.css-property .example .code {
+  display: none;
 }
 
-.name {
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  color: #240b2e;
-  margin-top: 0;
+.main-container.css-property .example .preview {
+  flex-grow: 1;
+  max-height: inherit;
 }
 
-#example-description {
-  margin:0;
-}
-
-.link {
-  font-family: Rubik;
+.property-description .name {
+  font-family: Menlo, monospace;
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.9px;
-  color: #222831;
+  font-weight: 400;
+  background-color: #ffdd57;
+  border-radius: 2px;
+  padding: 5px 8px;
+  line-height: 1.4;
+  display: inline;
 }
 
-.blue-color {
-  background-color: #222831;
+.property-description .description {
+  font-size: 0.9em;
+}
+
+footer {
+  margin: 30px 0 0;
+  font-size: 13px;
+  color: #666;
 }

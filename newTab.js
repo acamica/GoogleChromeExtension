@@ -1,35 +1,52 @@
 var rand = Math.floor(Math.random() * db.length);
 
 window.onload = function() {
-    // element description
-    var textarea = document.getElementById('description');
-    // element name
-    var name = document.getElementById('name');
-    //element example
-    var exa = document.getElementById('example-content');
-    // var resultViewer = document.getElementById('example-viewer');
-    var moreInfo = document.getElementById('link');
-    var code = document.getElementById('code-container');
 
-    name.innerHTML = db[rand].name;
-    if(db[rand]['description'] != ''){
-        textarea.innerHTML = db[rand].description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    var container = document.querySelector('.main-container');
+
+    // element description
+    var textarea = document.querySelector('.description');
+    // element name
+    var name = document.querySelector('.name');
+    //element example
+    var exa = document.querySelector('.example .preview');
+    // var resultViewer = document.getElementById('example-viewer');
+    var moreInfo = document.querySelector('.info-link');
+    var code = document.querySelector('.code');
+
+    var propertyDescription = document.querySelector('.property-description');
+
+
+    var item = db[rand];
+
+    name.innerHTML = item.name;
+
+
+    if(item.description !== ''){
+        textarea.innerHTML = item.description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
-    if(db[rand]['example'].code != null){
-        if(db[rand].example.title !== ""){
-            exa.innerHTML+= "<h2 id=example-title>" + db[rand].example.title + "</h2>"
+
+    if(item.example.code !== null) {
+        
+        if (item.language === 'html') {
+            code.innerHTML += item.example.code.replace(/</g, "&lt;");
         }
-        else{
-            code.innerHTML += "<p id=code-example>" + db[rand].example.code.replace(/</g, "&lt;") + "</p>"
-        }
-        if(db[rand].example.description !== ""){
-            exa.innerHTML+= "<p id=example-description>" + db[rand].example.description + "</p>"
+
+        // Add property description (if available)
+        if (item.example.title !== '') {
+            propertyDescription.querySelector('.name').innerHTML = item.example.title;
+
+            propertyDescription.querySelector('.description').innerHTML = item.example.description;
+            container.classList.add('css-property');
+        } else {
+            container.classList.remove('css-property');
         }
         
-        if (db[rand].example.show === "yes"){
-            exa.innerHTML+="<div class=code>"+ db[rand].example.code + "</div>";
+        if (item.example.show){
+            exa.innerHTML += item.example.code;
         }
-        moreInfo.href+= db[rand].reference;
+
+        moreInfo.href += item.reference;
     }
 
 	//first time
