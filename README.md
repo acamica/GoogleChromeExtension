@@ -57,6 +57,7 @@ where
 
 ## Authors
 [Sabrina Izcovich](https://github.com/sizcovich)
+[Tomás Escobar](https://github.com/tomasescobar)
 
 See also the list of contributors who participated in this project.
 
