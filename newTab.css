@@ -46,7 +46,7 @@ h1.name {
   font-family: Menlo, monospace;
   font-size: 20px;
   font-weight: 600;
-  margin: 0 0 20px;
+  margin: 0 0 8px;
 }
 
 .description {
@@ -117,6 +117,14 @@ h1.name {
   max-height: inherit;
 }
 
+.main-container.css-property .language-tag.css {
+  display: inline-block;
+}
+
+.main-container:not(.css-property) .language-tag.html {
+  display: inline-block;
+}
+
 .property-description .name {
   font-family: Menlo, monospace;
   font-size: 14px;
@@ -130,6 +138,29 @@ h1.name {
 
 .property-description .description {
   font-size: 0.9em;
+}
+
+.language-tag {
+  display: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 4px 8px;
+}
+
+.language-tag.css {
+  background-color: #1771b6;
+
+}
+
+.language-tag.html {
+  background-color: #e34b28;
+}
+
+.logo {
+    opacity: 0.8;
 }
 
 footer {

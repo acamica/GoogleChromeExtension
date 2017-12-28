@@ -9,18 +9,17 @@ window.onload = function() {
     // element name
     var name = document.querySelector('.name');
     //element example
-    var exa = document.querySelector('.example .preview');
-    // var resultViewer = document.getElementById('example-viewer');
+    var example = document.querySelector('.example .preview');
+    //link to more information
     var moreInfo = document.querySelector('.info-link');
+    //code
     var code = document.querySelector('.code');
 
     var propertyDescription = document.querySelector('.property-description');
 
-
     var item = db[rand];
 
     name.innerHTML = item.name;
-
 
     if(item.description !== ''){
         textarea.innerHTML = item.description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -43,7 +42,7 @@ window.onload = function() {
         }
         
         if (item.example.show){
-            exa.innerHTML += item.example.code;
+            example.innerHTML += item.example.code;
         }
 
         moreInfo.href += item.reference;
