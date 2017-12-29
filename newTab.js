@@ -22,7 +22,12 @@ window.onload = function() {
     name.innerHTML = item.name;
 
     if(item.description !== ''){
-        textarea.innerHTML = item.description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        if (item.language === 'html') {
+            textarea.innerHTML = item.description.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+        else if(item.language === 'css'){
+            textarea.innerHTML = item.description;
+        }
     }
 
     if(item.example.code !== null) {
@@ -49,13 +54,13 @@ window.onload = function() {
     }
 
 	//first time
-	$( '#first-time .modal-footer button' ).on( 'click', function() {
-		$( '#first-time' ).modal( 'hide' );
-		chrome.storage.local.set( { 'first_time': false } );
-	});
+	// $( '#first-time .modal-footer button' ).on( 'click', function() {
+	// 	$( '#first-time' ).modal( 'hide' );
+	// 	chrome.storage.local.set( { 'first_time': false } );
+	// });
 
-    $( '.pre-load' ).fadeOut( 400, function() {
-        $( '.pre-load' ).remove();
-        $( '.post-load' ).fadeIn();
-    });
+ //    $( '.pre-load' ).fadeOut( 400, function() {
+ //        $( '.pre-load' ).remove();
+ //        $( '.post-load' ).fadeIn();
+ //    });
 }
