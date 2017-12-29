@@ -1767,7 +1767,7 @@ db = [
     "reference": "http://cssreference.io/property/display",
     "description": "Establece el comportamiento de visualización del elemento.",
     "example": {
-      "code": "<style type=\"text/css\">.display .block--alpha { padding: 0; }.display .block span { background: hsl(348, 100%, 61%);color: #fff; }.display .block span:last-child { background: hsl(217, 71%, 53%); }</style><div class=\"example-output-div display \" id=\"display-none\"><div class=\"block\">Oilgate es un escándalo político sudafricano en el que la compañía de gasolina Imvume Holdings fue acusada de pagar R11 millones de dinero estatal al gobernante Congreso Nacional Africano poco antes de las elecciones. <p class=\"block block--alpha\">Hola mundo</p> El dinero había sido recibido de una compañía petrolera estatal, PetroSA, como parte de un pago por adelantado por una cantidad de condensado de petróleo que había sido adquirida por Glencore, una compañía internacional.</div></div>",
+      "code": "<style type=\"text/css\">.display .block--alpha { padding: 0; }.display .block span { background: hsl(348, 100%, 61%);color: #fff; }.display .block span:last-child { background: hsl(217, 71%, 53%); }</style><div class=\"example-output-div display \" id=\"display-none\"><div class=\"block\">“Sábete Sancho, que no es un hombre más que otro, si no hace más que otro.”<p class=\"block block--alpha\">Hola mundo</p>Don Quijote de la Mancha – Cervantes</div></div>",
       "title": "display: none;",
       "description": "Se agregó el texto \"Hola mundo\" dentro de la caja pero el elemento es completamente eliminado, como si no estuviese en el código HTML.",
       "show": true
@@ -1793,7 +1793,7 @@ db = [
     "example": {
       "code": "<style type=\"text/css\">.flex-basis { background: hsl(0, 0%, 95%);display: flex;padding: 1em;word-break: break-all; }</style><div class=\"example-output-div flex-basis \" id=\"flex-basis-auto\"><p class=\"block block--alpha\">Elemento flexbox</p></div>",
       "title": "flex-basis: auto;",
-      "description": "El elemento se dimensionará automáticamente en función de su contenido, o en el valor de alto o ancho si están definidos.",
+      "description": "El elemento se redimensionará automáticamente en función de su contenido, o en el valor de alto o ancho si están definidos.",
       "show": true
     },
     "language": "css",
@@ -1887,7 +1887,7 @@ db = [
     "reference": "http://cssreference.io/property/font-variant",
     "description": "Define qué glifo usar para cada letra.",
     "example": {
-      "code": "<style type=\"text/css\">.font-variant { font-size: 1.2em; }</style><div class=\"example-output-div font-variant \" id=\"font-variant-normal\">Las Fuerzas Armadas Británicas, también conocidas como las Fuerzas Armadas de Su Majestad o las Fuerzas Armadas de la Corona, son los servicios militares responsables de la defensa del Reino Unido, sus territorios de ultramar y las dependencias de la Corona.</div>",
+      "code": "<style type=\"text/css\">.font-variant { font-size: 1.2em; }</style><div class=\"example-output-div font-variant \" id=\"font-variant-normal\">“Yo creo que nada sucede por casualidad ¿Sabes qué? En el fondo las cosas tienen su plan secreto, aunque nosotros no lo entendamos”<br>La sombra del viento – Carlos Ruiz Zafón</div>",
       "title": "font-variant: normal;",
       "description": "Cada letra usa su glifo normal.",
       "show": true
@@ -2163,7 +2163,7 @@ db = [
     "reference": "http://cssreference.io/property/outline-style",
     "description": "Define el estilo de los contornos de un elemento.",
     "example": {
-      "code": "<style type=\"text/css\">.outline-style { padding: 1em;outline-width: 4px; }</style><div class=\"example-output-div outline-style \" id=\"outline-style-none\">La masacre de Ramallo ocurrió el 17 de septiembre de 1999, en Villa Ramallo, en el norte de la provincia de Buenos Aires, Argentina, cuando tres ladrones armados irrumpieron en las oficinas locales del Banco de la Nación Argentina, tomando seis rehenes. Después de varias horas, trataron de escapar en un automóvil, utilizando al gerente del banco y un contador como escudos humanos, y sosteniendo a la esposa del gerente.</div>",
+      "code": "<style type=\"text/css\">.outline-style { padding: 1em;outline-width: 4px; }</style><div class=\"example-output-div outline-style \" id=\"outline-style-none\">“Es justamente la posibilidad de realizar un sueño lo que hace que la vida sea interesante.” <br>El Alquimista – Paulo Coelho</div>",
       "title": "outline-style: none;",
       "description": "Elimina los contornos del elemento.",
       "show": true
