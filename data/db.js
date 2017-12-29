@@ -1347,7 +1347,7 @@ db = [
     "reference": "http://cssreference.io/property/border-bottom-right-radius",
     "description": "Define el radio de la esquina inferior derecha.",
     "example": {
-      "code": "<style type=\"text/css\">.border-bottom-right-radius { border-bottom-color: #05ffb0;border-right-color: hsl(348, 100%, 61%);border-style: solid;border-width: 4px; }</style><div class=\"example-output-div border-bottom-right-radius \" id=\"border-bottom-right-radius-0\">En la vida hay algo peor que el fracaso: el no haber intentado nada. Franklin D. Roosvelt</div>",
+      "code": "<style type=\"text/css\">.border-bottom-right-radius { border-bottom-color: #05ffb0;border-right-color: hsl(348, 100%, 61%);border-style: solid;border-width: 4px; }</style><div class=\"example-output-div border-bottom-right-radius \" id=\"border-bottom-right-radius-0\">En la vida hay algo peor que el fracaso: el no haber intentado nada. <br>Franklin D. Roosvelt</div>",
       "title": "border-bottom-right-radius: 0;",
       "description": "Elimina cualquier radio de borde.",
       "show": true
@@ -1443,7 +1443,7 @@ db = [
     "reference": "http://cssreference.io/property/border-bottom-width",
     "description": "Como <code>border-width</code>, pero para el borde inferior únicamente.",
     "example": {
-      "code": "<style type=\"text/css\">.border-bottom-width { border-bottom-style: solid; }</style><div class=\"example-output-div border-bottom-width \" id=\"border-bottom-width-0\">Pienso y dudo, luego existo. Descartes</div>",
+      "code": "<style type=\"text/css\">.border-bottom-width { border-bottom-style: solid; }</style><div class=\"example-output-div border-bottom-width \" id=\"border-bottom-width-0\">Pienso y dudo, luego existo. <br>Descartes</div>",
       "title": "border-bottom-width: 0;",
       "description": "Elimina el borde inferior.",
       "show": true
