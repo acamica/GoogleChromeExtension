@@ -673,7 +673,7 @@ db = [
   },
   {
     "reference": "https://developer.mozilla.org/es/docs/Web/HTML/Elemento/param",
-    "description": "<param> de \"parameter\", o sea parámetro, permite especificar parámetros de ejecución para un objeto.",
+    "description": "<param> de parámetro, permite especificar parámetros de ejecución para un objeto.",
     "example": {
       "show": true,
       "title": "",
@@ -1227,7 +1227,7 @@ db = [
     "reference": "http://cssreference.io/property/align-self",
     "description": "Funciona como <code>align-items</code>, pero aplica a un único ítem flexbox, en vez de todos.",
     "example": {
-      "code": "<style type=\"text/css\">.align-self { align-items: center;background: hsl(0, 0%, 95%);display: flex;height: 200px;justify-content: center;padding: 0; }</style><style type=\"text/css\">.align-self .square { height: 50px;margin: 0 2px;width: calc(20% - 4px); }.align-self .square:nth-child(2) { background: #05ffb0;color: #310736; }.align-self .square:nth-child(4) { height: 75px; }.align-self .line { left: 2px;position: absolute;right: 2px; }.align-self .line--default { top: 50%; }.align-self .line--default:before { content: \"Items\"; }.align-self .line--red:before { content: \"Propios\"; }</style><div class=\"example-output-div align-self \" id=\"align-self-auto\"><p class=\"square square--plum\">1</p><p class=\"square target\">Item</p><p class=\"square square--plum\">3</p><p class=\"square square--plum\">4</p><p class=\"square square--plum\">5</p><div class=\"line line--default\"></div><div class=\"line line--red\"></div></div>",
+      "code": "<style type=\"text/css\">.align-self { align-items: center;background: hsl(0, 0%, 95%);display: flex;height: 200px;justify-content: center;padding: 0; }</style><style type=\"text/css\">.align-self .square { height: 50px;margin: 0 2px;width: calc(20% - 4px); }.align-self .square:nth-child(2) { background: #05ffb0;color: #310736; }.align-self .square:nth-child(4) { height: 75px; }.align-self .line { left: 2px;position: absolute;right: 2px; }.align-self .line--default { top: 50%; }.align-self .line--default:before { content: \"Items\"; }.align-self .line--red:before { content: \"Self\"; }</style><div class=\"example-output-div align-self \" id=\"align-self-auto\"><p class=\"square square--plum\">1</p><p class=\"square target\">Item</p><p class=\"square square--plum\">3</p><p class=\"square square--plum\">4</p><p class=\"square square--plum\">5</p><div class=\"line line--default\"></div><div class=\"line line--red\"></div></div>",
       "title": "align-self: auto;",
       "description": "El ítem usará el valor de <code>align-items</code>.",
       "show": true
