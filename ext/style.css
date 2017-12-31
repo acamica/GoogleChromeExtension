@@ -1,3 +1,5 @@
+/*! style extracted from minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+
 .block--alpha {
 	background: #05ffb0;
 	color: #310736;
@@ -227,8 +229,8 @@
 	border-left: 4px dotted red;
 }
 
-#border-style-none {
-	border-style: none;
+#border-style-dashed {
+	border-style: dashed;
 }
 
 #border-right-4px-dotted-red {
@@ -259,8 +261,8 @@
 	border-top-right-radius: 0;
 }
 
-#border-top-style-none {
-	border-top-style: none;
+#border-top-style-double {
+	border-top-style: double;
 }
 
 #bottom-auto {
@@ -329,8 +331,8 @@
 	color: #310736;
 }
 
-#color-transparent {
-	color: transparent;
+#color-blue {
+	color: blue;
 }
 
 #display-none .block--alpha {
@@ -410,8 +412,8 @@
 	outline-style: none;
 }
 
-#outline-color-transparent {
-	outline-color: transparent;
+#outline-color-red {
+	outline-color: red;
 }
 
 #outline-4px-dotted-red {
@@ -502,4 +504,8 @@
 .vertical-align .va-span {
 	display: inline;
 	padding: 0 0.25em;
+}
+
+#text-transform-uppercase {
+	text-transform: uppercase;
 }

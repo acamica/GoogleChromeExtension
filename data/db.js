@@ -762,7 +762,7 @@ db = [
       "show": true,
       "title": "",
       "description": "",
-      "code": "este es un <wbr> ejemplo laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargo."
+      "code": "este es un ejemplo <wbr> laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargo."
     },
     "language": "html",
     "name": "<code>&lt;wbr&gt;</code>"
@@ -1110,7 +1110,7 @@ db = [
       "show": true,
       "title": "",
       "description": "",
-      "code": "Las cosas que necesitarás son: - Una linterna - Una caja de fósforos - Una carpa \n <pre>Las cosas que necesitarás son:\n- Una linterna\n- Una caja de fósforos\n- Una carpa\n</pre>"
+      "code": "Las cosas que necesitarás son:\n - Una linterna\n - Una caja de fósforos\n - Una carpa \n <pre>Las cosas que necesitarás son:\n- Una linterna\n- Una caja de fósforos\n- Una carpa\n</pre>"
     },
     "language": "html",
     "name": "<code>&lt;pre&gt;</code>"
@@ -1527,9 +1527,9 @@ db = [
     "reference": "http://cssreference.io/property/border-style",
     "description": "Define el estilo de los bordes del elemento.",
     "example": {
-      "code": "<style type=\"text/css\">.border-style { padding: 1em;border-width: 4px; }</style><div class=\"example-output-div border-style \" id=\"border-style-none\">Más vale pájaro en mano que cien volando.</div>",
-      "title": "border-style: none;",
-      "description": "Elimina los bordes del elemento.",
+      "code": "<style type=\"text/css\">.border-style { padding: 1em;border-width: 4px; }</style><div class=\"example-output-div border-style \" id=\"border-style-dashed\">Más vale pájaro en mano que cien volando.</div>",
+      "title": "border-style: dashed;",
+      "description": "Convierte los bordes del elemento en una secuencia de líneas.",
       "show": true
     },
     "language": "css",
@@ -1647,9 +1647,9 @@ db = [
     "reference": "http://cssreference.io/property/border-top-style",
     "description": "Como <code>border-style</code>, pero para el borde superior únicamente.",
     "example": {
-      "code": "<style type=\"text/css\">.border-top-style { border-top-width: 4px; }</style><div class=\"example-output-div border-top-style \" id=\"border-top-style-none\">No hay mal que por bien no venga.</div>",
-      "title": "border-top-style: none;",
-      "description": "Elimina el borde superior.",
+      "code": "<style type=\"text/css\">.border-top-style { border-top-width: 4px; }</style><div class=\"example-output-div border-top-style \" id=\"border-top-style-double\">No hay mal que por bien no venga.</div>",
+      "title": "border-top-style: double;",
+      "description": "Divide el borde superior en dos líneas.",
       "show": true
     },
     "language": "css",
@@ -1719,9 +1719,9 @@ db = [
     "reference": "http://cssreference.io/property/color",
     "description": "Define el color del texto.",
     "example": {
-      "code": "<style type=\"text/css\">.color { font-size: 1.5em; }</style><div class=\"example-output-div color \" id=\"color-transparent\">Hola mundo</div>",
-      "title": "color: transparent;",
-      "description": "Aplica el color transparente al texto. El texto seguirá ocupando el espacio correspondiente.",
+      "code": "<style type=\"text/css\">.color { font-size: 1.5em; }</style><div class=\"example-output-div color \" id=\"color-blue\">Hola mundo</div>",
+      "title": "color: blue;",
+      "description": "Aplica el color azul al texto.",
       "show": true
     },
     "language": "css",
@@ -2175,9 +2175,9 @@ db = [
     "reference": "http://cssreference.io/property/outline-color",
     "description": "Define el color de los contornos de un elemento.",
     "example": {
-      "code": "<style type=\"text/css\">.outline-color { outline-style: solid;outline-width: 4px; }</style><div class=\"example-output-div outline-color \" id=\"outline-color-transparent\">Stan Wilson (nacido el 2 de mayo de 1922 - 8 de junio de 2005), es un cantante y guitarrista estadounidense. Es conocido por sus primeras actuaciones en la escena popular de San Francisco y por su asociación con The Kingston Trio. The Trio grabó dos de sus canciones, \"Jane, Jane, Jane\" y \"Rolling Stone\".</div>",
-      "title": "outline-color: transparent;",
-      "description": "Aplica un color transparente a los contornos. Los contornos seguirán ocupando el espacio definido por el valor de <code>outline-width</code>.",
+      "code": "<style type=\"text/css\">.outline-color { outline-style: solid;outline-width: 4px; }</style><div class=\"example-output-div outline-color \" id=\"outline-color-red\">Stan Wilson (nacido el 2 de mayo de 1922 - 8 de junio de 2005), es un cantante y guitarrista estadounidense. Es conocido por sus primeras actuaciones en la escena popular de San Francisco y por su asociación con The Kingston Trio. The Trio grabó dos de sus canciones, \"Jane, Jane, Jane\" y \"Rolling Stone\".</div>",
+      "title": "outline-color: red;",
+      "description": "Aplica un color rojo a los contornos, que ocuparán el espacio definido por el valor de <code>outline-width</code>.",
       "show": true
     },
     "language": "css",
@@ -2451,9 +2451,9 @@ db = [
     "reference": "http://cssreference.io/property/text-transform",
     "description": "Define cómo se debe transformar el contenido de texto.",
     "example": {
-      "code": "<div class=\"example-output-div text-transform \" id=\"text-transform-none\"><strong>Bishop</strong><br>Bishop (anteriormente Bishop Creek) es una ciudad en el condado de Inyo, California, Estados Unidos. Aunque Bishop es la única ciudad incorporada y el lugar más poblado del condado de Inyo, la sede del condado se encuentra en Independence. Bishop está ubicada cerca del extremo norte del valle de Owens, a una altura de 4,150 pies (1,260 m).</div>",
-      "title": "text-transform: none;",
-      "description": "Elimina cualquier transformación de texto: el texto aparecerá igual que en el código HTML.",
+      "code": "<div class=\"example-output-div text-transform \" id=\"text-transform-uppercase\"><strong>Bishop</strong><br>Bishop (anteriormente Bishop Creek) es una ciudad en el condado de Inyo, California, Estados Unidos. Aunque Bishop es la única ciudad incorporada y el lugar más poblado del condado de Inyo, la sede del condado se encuentra en Independence. Bishop está ubicada cerca del extremo norte del valle de Owens, a una altura de 4,150 pies (1,260 m).</div>",
+      "title": "text-transform: uppercase;",
+      "description": "Convierte todas las letras del texto en mayúsculas.",
       "show": true
     },
     "language": "css",
